@@ -15,6 +15,9 @@ public class ElectionApplication {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        PollGui myGUI = new PollGui();
+        myGUI.setVisible(true);
+        
         // TODO code application logic here
     }
     
