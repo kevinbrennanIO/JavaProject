@@ -36,6 +36,9 @@ public class PollGui extends javax.swing.JFrame {
         can6Btn = new javax.swing.JRadioButton();
         can4Btn = new javax.swing.JRadioButton();
         genderLbl = new javax.swing.JLabel();
+        ageLbl = new javax.swing.JLabel();
+        genderCbo = new javax.swing.JComboBox<>();
+        ageCbo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,7 +56,18 @@ public class PollGui extends javax.swing.JFrame {
 
         can4Btn.setText("Joan Freeman");
 
-        genderLbl.setText("Gender");
+        genderLbl.setText("Gender:");
+
+        ageLbl.setText("Age Group:");
+
+        genderCbo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Male", "Female" }));
+        genderCbo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genderCboActionPerformed(evt);
+            }
+        });
+
+        ageCbo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "18 - 25", "25 - 40", "40 - 65", "> 65" }));
 
         javax.swing.GroupLayout endUserPnlLayout = new javax.swing.GroupLayout(endUserPnl);
         endUserPnl.setLayout(endUserPnlLayout);
@@ -67,12 +81,16 @@ public class PollGui extends javax.swing.JFrame {
                             .addComponent(can1Btn)
                             .addComponent(can2Btn)
                             .addComponent(can3Btn)
-                            .addComponent(genderLbl))
+                            .addComponent(genderLbl)
+                            .addComponent(ageLbl))
                         .addGap(29, 29, 29)
                         .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(can6Btn)
                             .addComponent(can5Btn)
-                            .addComponent(can4Btn)))
+                            .addComponent(can4Btn)
+                            .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(ageCbo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(genderCbo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(endUserPnlLayout.createSequentialGroup()
                         .addGap(132, 132, 132)
                         .addComponent(titleLbl)))
@@ -95,9 +113,15 @@ public class PollGui extends javax.swing.JFrame {
                 .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(can3Btn)
                     .addComponent(can6Btn))
-                .addGap(34, 34, 34)
-                .addComponent(genderLbl)
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(genderLbl)
+                    .addComponent(genderCbo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ageLbl)
+                    .addComponent(ageCbo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -114,11 +138,15 @@ public class PollGui extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(endUserPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void genderCboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderCboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_genderCboActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,6 +184,8 @@ public class PollGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> ageCbo;
+    private javax.swing.JLabel ageLbl;
     private javax.swing.JRadioButton can1Btn;
     private javax.swing.JRadioButton can2Btn;
     private javax.swing.JRadioButton can3Btn;
@@ -163,6 +193,7 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton can5Btn;
     private javax.swing.JRadioButton can6Btn;
     private javax.swing.JPanel endUserPnl;
+    private javax.swing.JComboBox<String> genderCbo;
     private javax.swing.JLabel genderLbl;
     private javax.swing.JLabel titleLbl;
     // End of variables declaration//GEN-END:variables

@@ -35,7 +35,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="endUserPnl" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="31" max="32767" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,12 +55,17 @@
                               <Component id="can2Btn" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="can3Btn" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="genderLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="ageLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="can6Btn" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="can5Btn" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="can4Btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="ageCbo" min="-2" max="-2" attributes="0"/>
+                                  <Component id="genderCbo" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -92,9 +97,17 @@
                       <Component id="can3Btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="can6Btn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="genderLbl" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="221" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="genderLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="genderCbo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="ageLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ageCbo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="155" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -137,8 +150,46 @@
         </Component>
         <Component class="javax.swing.JLabel" name="genderLbl">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Gender"/>
+            <Property name="text" type="java.lang.String" value="Gender:"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="ageLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Age Group:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="genderCbo">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value=""/>
+                <StringItem index="1" value="Male"/>
+                <StringItem index="2" value="Female"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genderCboActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="ageCbo">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="5">
+                <StringItem index="0" value=""/>
+                <StringItem index="1" value="18 - 25"/>
+                <StringItem index="2" value="25 - 40"/>
+                <StringItem index="3" value="40 - 65"/>
+                <StringItem index="4" value="&gt; 65"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
