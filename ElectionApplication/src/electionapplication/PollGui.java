@@ -27,6 +27,7 @@ public class PollGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         endUserPnl = new javax.swing.JPanel();
         titleLbl = new javax.swing.JLabel();
         can1Btn = new javax.swing.JRadioButton();
@@ -46,18 +47,27 @@ public class PollGui extends javax.swing.JFrame {
         titleLbl.setText("Election 2018 Exit Poll");
 
         can1Btn.setBackground(new java.awt.Color(204, 204, 204));
+        buttonGroup1.add(can1Btn);
         can1Btn.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
         can1Btn.setText("18 - 25");
+        can1Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                can1BtnActionPerformed(evt);
+            }
+        });
 
         can2Btn.setBackground(new java.awt.Color(204, 204, 204));
+        buttonGroup1.add(can2Btn);
         can2Btn.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
         can2Btn.setText("25 - 40");
 
         can3Btn.setBackground(new java.awt.Color(204, 204, 204));
+        buttonGroup1.add(can3Btn);
         can3Btn.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
         can3Btn.setText("40 - 65");
 
         can4Btn.setBackground(new java.awt.Color(204, 204, 204));
+        buttonGroup1.add(can4Btn);
         can4Btn.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
         can4Btn.setText("> 65");
 
@@ -71,7 +81,7 @@ public class PollGui extends javax.swing.JFrame {
         });
 
         voteCbo.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        voteCbo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Michael D Higgins", "Peter Casey", "Sean Gallagher", "Joan Freeman", "Gavin Duffy", "Liadh Ni Riada" }));
+        voteCbo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Michael D Higgins", "Peter Casey", "Sean Gallagher", "Joan Freeman", "Gavin Duffy", "Liadh Ni Riada" }));
 
         voteLbl.setText("Vote:");
 
@@ -86,7 +96,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addComponent(genderCbo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, endUserPnlLayout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
+                .addContainerGap(53, Short.MAX_VALUE)
                 .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(endUserPnlLayout.createSequentialGroup()
                         .addComponent(can1Btn)
@@ -125,7 +135,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addGroup(endUserPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(genderLbl)
                     .addComponent(genderCbo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -151,6 +161,10 @@ public class PollGui extends javax.swing.JFrame {
     private void genderCboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderCboActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_genderCboActionPerformed
+
+    private void can1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_can1BtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_can1BtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -188,6 +202,7 @@ public class PollGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JRadioButton can1Btn;
     private javax.swing.JRadioButton can2Btn;
     private javax.swing.JRadioButton can3Btn;
@@ -203,4 +218,5 @@ public class PollGui extends javax.swing.JFrame {
     void visible(boolean b) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+ 
 }
