@@ -264,7 +264,9 @@
                           <Component id="p3answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p3Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="279" max="32767" attributes="0"/>
+                      <EmptySpace pref="121" max="32767" attributes="0"/>
+                      <Component id="p3SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -275,7 +277,7 @@
                       <Component id="p3mainHeadingLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="p3candidateComboBox" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="p3maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p3femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -287,8 +289,11 @@
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="p3Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="p3answer2TF" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p3answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p3SubmitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -356,6 +361,14 @@
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="p3SubmitBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p3SubmitBtnActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelFour">
@@ -383,7 +396,9 @@
                           <Component id="p4answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p4Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="236" max="32767" attributes="0"/>
+                      <EmptySpace pref="90" max="32767" attributes="0"/>
+                      <Component id="p4SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -394,7 +409,7 @@
                       <Component id="p4mainHeadingLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="p4candidateComboBox" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="p4maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p4femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -406,8 +421,11 @@
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="p4Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="p4answer2TF" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p4answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p4SubmitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -475,6 +493,11 @@
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="p4SubmitBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelFive">
@@ -504,6 +527,11 @@
                       </Group>
                       <EmptySpace pref="52" max="32767" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="p5SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -526,7 +554,9 @@
                       <Component id="p5Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="p5answer2TF" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="p5SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -594,6 +624,11 @@
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="p5SubmitBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelSix">
@@ -621,7 +656,9 @@
                           <Component id="p6answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p6Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="176" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="p6SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="46" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -632,7 +669,7 @@
                       <Component id="p6mainHeadingLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="p6candidateComboBox" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="p6maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p6femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -644,8 +681,11 @@
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="p6Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="p6answer2TF" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p6answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p6SubmitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -713,6 +753,11 @@
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="p6SubmitBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelSeven">
@@ -736,12 +781,12 @@
                               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="ageGrp1Btn" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ageGrp3Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ageGrp3Btn" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="ageGrp4Lbl" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ageGrp2Lbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ageGrp4Btn" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ageGrp2Btn" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -763,12 +808,12 @@
                       <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="ageGrp1Btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ageGrp2Lbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ageGrp2Btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="ageGrp3Lbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ageGrp4Lbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ageGrp3Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ageGrp4Btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="246" max="32767" attributes="0"/>
                   </Group>
@@ -795,7 +840,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp1BtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="ageGrp2Lbl">
+            <Component class="javax.swing.JRadioButton" name="ageGrp2Btn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="ageGroup"/>
@@ -803,10 +848,10 @@
                 <Property name="text" type="java.lang.String" value="26 - 40"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp2LblActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp2BtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="ageGrp3Lbl">
+            <Component class="javax.swing.JRadioButton" name="ageGrp3Btn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="ageGroup"/>
@@ -814,10 +859,10 @@
                 <Property name="text" type="java.lang.String" value="41 - 65"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp3LblActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp3BtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="ageGrp4Lbl">
+            <Component class="javax.swing.JRadioButton" name="ageGrp4Btn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="ageGroup"/>
@@ -825,7 +870,7 @@
                 <Property name="text" type="java.lang.String" value="&gt; 65"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp4LblActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp4BtnActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="ageGroupLbl">
