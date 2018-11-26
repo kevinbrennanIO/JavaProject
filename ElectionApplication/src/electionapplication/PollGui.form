@@ -798,6 +798,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="26 - 40"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp2LblActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="ageGrp3Lbl">
               <Properties>
@@ -806,6 +809,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="41 - 65"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp3LblActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="ageGrp4Lbl">
               <Properties>
@@ -814,6 +820,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="&gt; 65"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageGrp4LblActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="ageGroupLbl">
               <Properties>

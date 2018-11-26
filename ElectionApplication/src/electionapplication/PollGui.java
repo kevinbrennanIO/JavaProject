@@ -504,12 +504,27 @@ public class PollGui extends javax.swing.JFrame {
 
         ageGroup.add(ageGrp2Lbl);
         ageGrp2Lbl.setText("26 - 40");
+        ageGrp2Lbl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ageGrp2LblActionPerformed(evt);
+            }
+        });
 
         ageGroup.add(ageGrp3Lbl);
         ageGrp3Lbl.setText("41 - 65");
+        ageGrp3Lbl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ageGrp3LblActionPerformed(evt);
+            }
+        });
 
         ageGroup.add(ageGrp4Lbl);
         ageGrp4Lbl.setText("> 65");
+        ageGrp4Lbl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ageGrp4LblActionPerformed(evt);
+            }
+        });
 
         ageGroupLbl.setText("Age Group:");
 
@@ -633,6 +648,39 @@ public class PollGui extends javax.swing.JFrame {
     panelSix.setVisible(false);
     panelSeven.setVisible(false);
     }//GEN-LAST:event_ageGrp1BtnActionPerformed
+
+    private void ageGrp2LblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp2LblActionPerformed
+        // TODO add your handling code here:
+        panelOne.setVisible(false);
+    panelTwo.setVisible(false);
+    panelThree.setVisible(false);
+    panelFour.setVisible(true);
+    panelFive.setVisible(false);
+    panelSix.setVisible(false);
+    panelSeven.setVisible(false);
+    }//GEN-LAST:event_ageGrp2LblActionPerformed
+
+    private void ageGrp3LblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp3LblActionPerformed
+        // TODO add your handling code here:
+        panelOne.setVisible(false);
+    panelTwo.setVisible(false);
+    panelThree.setVisible(false);
+    panelFour.setVisible(false);
+    panelFive.setVisible(true);
+    panelSix.setVisible(false);
+    panelSeven.setVisible(false);
+    }//GEN-LAST:event_ageGrp3LblActionPerformed
+
+    private void ageGrp4LblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp4LblActionPerformed
+        // TODO add your handling code here:
+        panelOne.setVisible(false);
+    panelTwo.setVisible(false);
+    panelThree.setVisible(false);
+    panelFour.setVisible(false);
+    panelFive.setVisible(false);
+    panelSix.setVisible(true);
+    panelSeven.setVisible(false);
+    }//GEN-LAST:event_ageGrp4LblActionPerformed
 
     /**
      * @param args the command line arguments
