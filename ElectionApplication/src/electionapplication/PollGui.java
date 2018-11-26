@@ -50,17 +50,41 @@ public class PollGui extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         panelThree = new javax.swing.JPanel();
-        mainHeadingLbl2 = new javax.swing.JLabel();
-        candidateComboBox = new javax.swing.JComboBox<>();
+        p3mainHeadingLbl = new javax.swing.JLabel();
+        p3candidateComboBox = new javax.swing.JComboBox<>();
         p3maleBtn = new javax.swing.JRadioButton();
-        p3FemaleBnt = new javax.swing.JRadioButton();
+        p3femaleBtn = new javax.swing.JRadioButton();
         p3Q1Lbl = new javax.swing.JLabel();
         p3Q2Lbl = new javax.swing.JLabel();
         p3Answer1TF = new javax.swing.JTextField();
         p3answer2TF = new javax.swing.JTextField();
         panelFour = new javax.swing.JPanel();
+        p4mainHeadingLbl = new javax.swing.JLabel();
+        p4candidateComboBox = new javax.swing.JComboBox<>();
+        p4maleBtn = new javax.swing.JRadioButton();
+        p4femaleBtn = new javax.swing.JRadioButton();
+        p4Q1Lbl = new javax.swing.JLabel();
+        p4Q2Lbl = new javax.swing.JLabel();
+        p4Answer1TF = new javax.swing.JTextField();
+        p4answer2TF = new javax.swing.JTextField();
         panelFive = new javax.swing.JPanel();
+        p5mainHeadingLbl = new javax.swing.JLabel();
+        p5candidateComboBox = new javax.swing.JComboBox<>();
+        p5maleBtn = new javax.swing.JRadioButton();
+        p5femaleBtn = new javax.swing.JRadioButton();
+        p5Q1Lbl = new javax.swing.JLabel();
+        p5Q2Lbl = new javax.swing.JLabel();
+        p5Answer1TF = new javax.swing.JTextField();
+        p5answer2TF = new javax.swing.JTextField();
         panelSix = new javax.swing.JPanel();
+        p6mainHeadingLbl = new javax.swing.JLabel();
+        p6candidateComboBox = new javax.swing.JComboBox<>();
+        p6maleBtn = new javax.swing.JRadioButton();
+        p6femaleBtn = new javax.swing.JRadioButton();
+        p6Q1Lbl = new javax.swing.JLabel();
+        p6Q2Lbl = new javax.swing.JLabel();
+        p6Answer1TF = new javax.swing.JTextField();
+        p6answer2TF = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,7 +92,6 @@ public class PollGui extends javax.swing.JFrame {
 
         mainHeadingLbl.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         mainHeadingLbl.setText("Election Applicaion 2018");
-        mainHeadingLbl.setLocation(new java.awt.Point(-32500, -32500));
 
         userTypeLbl.setText("User type:");
 
@@ -123,7 +146,6 @@ public class PollGui extends javax.swing.JFrame {
 
         mainHeadingLbl1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         mainHeadingLbl1.setText("Election Applicaion 2018");
-        mainHeadingLbl1.setLocation(new java.awt.Point(-32500, -32500));
 
         jButton1.setText("Load");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -189,17 +211,16 @@ public class PollGui extends javax.swing.JFrame {
 
         mainPanel.add(panelTwo, "card3");
 
-        mainHeadingLbl2.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        mainHeadingLbl2.setText("Election Applicaion 2018");
-        mainHeadingLbl2.setLocation(new java.awt.Point(-32500, -32500));
+        p3mainHeadingLbl.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        p3mainHeadingLbl.setText("Election Applicaion 2018");
 
-        candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        p3candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         buttonGroupP3.add(p3maleBtn);
         p3maleBtn.setText("Male");
 
-        buttonGroupP3.add(p3FemaleBnt);
-        p3FemaleBnt.setText("Female");
+        buttonGroupP3.add(p3femaleBtn);
+        p3femaleBtn.setText("Female");
 
         p3Q1Lbl.setText("Q1: Is this your first time voting?");
 
@@ -223,12 +244,12 @@ public class PollGui extends javax.swing.JFrame {
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(p3Q2Lbl)
                     .addComponent(p3Q1Lbl)
-                    .addComponent(candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mainHeadingLbl2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(p3candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p3mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panelThreeLayout.createSequentialGroup()
                         .addComponent(p3maleBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(p3FemaleBnt))
+                        .addComponent(p3femaleBtn))
                     .addComponent(p3answer2TF)
                     .addComponent(p3Answer1TF))
                 .addContainerGap(330, Short.MAX_VALUE))
@@ -237,13 +258,13 @@ public class PollGui extends javax.swing.JFrame {
             panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelThreeLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(mainHeadingLbl2)
+                .addComponent(p3mainHeadingLbl)
                 .addGap(48, 48, 48)
-                .addComponent(candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(p3candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p3maleBtn)
-                    .addComponent(p3FemaleBnt))
+                    .addComponent(p3femaleBtn))
                 .addGap(78, 78, 78)
                 .addComponent(p3Q1Lbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -257,41 +278,203 @@ public class PollGui extends javax.swing.JFrame {
 
         mainPanel.add(panelThree, "card4");
 
+        p4mainHeadingLbl.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        p4mainHeadingLbl.setText("Election Applicaion 2018");
+
+        p4candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        buttonGroupP3.add(p4maleBtn);
+        p4maleBtn.setText("Male");
+
+        buttonGroupP3.add(p4femaleBtn);
+        p4femaleBtn.setText("Female");
+
+        p4Q1Lbl.setText("Q1: Is this your first time voting?");
+
+        p4Q2Lbl.setText("Q2: Lets pick this question another time?");
+
+        p4Answer1TF.setText("Answer");
+        p4Answer1TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                p4Answer1TFActionPerformed(evt);
+            }
+        });
+
+        p4answer2TF.setText("Answer");
+
         javax.swing.GroupLayout panelFourLayout = new javax.swing.GroupLayout(panelFour);
         panelFour.setLayout(panelFourLayout);
         panelFourLayout.setHorizontalGroup(
             panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 598, Short.MAX_VALUE)
+            .addGroup(panelFourLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(p4Q2Lbl)
+                    .addComponent(p4Q1Lbl)
+                    .addComponent(p4candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p4mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(panelFourLayout.createSequentialGroup()
+                        .addComponent(p4maleBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(p4femaleBtn))
+                    .addComponent(p4answer2TF)
+                    .addComponent(p4Answer1TF))
+                .addContainerGap(330, Short.MAX_VALUE))
         );
         panelFourLayout.setVerticalGroup(
             panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 563, Short.MAX_VALUE)
+            .addGroup(panelFourLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(p4mainHeadingLbl)
+                .addGap(48, 48, 48)
+                .addComponent(p4candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p4maleBtn)
+                    .addComponent(p4femaleBtn))
+                .addGap(78, 78, 78)
+                .addComponent(p4Q1Lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(p4Answer1TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(p4Q2Lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(p4answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
         );
 
         mainPanel.add(panelFour, "card5");
+
+        p5mainHeadingLbl.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        p5mainHeadingLbl.setText("Election Applicaion 2018");
+
+        p5candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        buttonGroupP3.add(p5maleBtn);
+        p5maleBtn.setText("Male");
+
+        buttonGroupP3.add(p5femaleBtn);
+        p5femaleBtn.setText("Female");
+
+        p5Q1Lbl.setText("Q1: Is this your first time voting?");
+
+        p5Q2Lbl.setText("Q2: Lets pick this question another time?");
+
+        p5Answer1TF.setText("Answer");
+        p5Answer1TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                p5Answer1TFActionPerformed(evt);
+            }
+        });
+
+        p5answer2TF.setText("Answer");
 
         javax.swing.GroupLayout panelFiveLayout = new javax.swing.GroupLayout(panelFive);
         panelFive.setLayout(panelFiveLayout);
         panelFiveLayout.setHorizontalGroup(
             panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 598, Short.MAX_VALUE)
+            .addGroup(panelFiveLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(p5Q2Lbl)
+                    .addComponent(p5Q1Lbl)
+                    .addComponent(p5candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p5mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(panelFiveLayout.createSequentialGroup()
+                        .addComponent(p5maleBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(p5femaleBtn))
+                    .addComponent(p5answer2TF)
+                    .addComponent(p5Answer1TF))
+                .addContainerGap(330, Short.MAX_VALUE))
         );
         panelFiveLayout.setVerticalGroup(
             panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 563, Short.MAX_VALUE)
+            .addGroup(panelFiveLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(p5mainHeadingLbl)
+                .addGap(48, 48, 48)
+                .addComponent(p5candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p5maleBtn)
+                    .addComponent(p5femaleBtn))
+                .addGap(78, 78, 78)
+                .addComponent(p5Q1Lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(p5Answer1TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(p5Q2Lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(p5answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
         );
 
         mainPanel.add(panelFive, "card6");
+
+        p6mainHeadingLbl.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        p6mainHeadingLbl.setText("Election Applicaion 2018");
+
+        p6candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        buttonGroupP3.add(p6maleBtn);
+        p6maleBtn.setText("Male");
+
+        buttonGroupP3.add(p6femaleBtn);
+        p6femaleBtn.setText("Female");
+
+        p6Q1Lbl.setText("Q1: Is this your first time voting?");
+
+        p6Q2Lbl.setText("Q2: Lets pick this question another time?");
+
+        p6Answer1TF.setText("Answer");
+        p6Answer1TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                p6Answer1TFActionPerformed(evt);
+            }
+        });
+
+        p6answer2TF.setText("Answer");
 
         javax.swing.GroupLayout panelSixLayout = new javax.swing.GroupLayout(panelSix);
         panelSix.setLayout(panelSixLayout);
         panelSixLayout.setHorizontalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 598, Short.MAX_VALUE)
+            .addGroup(panelSixLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(p6Q2Lbl)
+                    .addComponent(p6Q1Lbl)
+                    .addComponent(p6candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p6mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(panelSixLayout.createSequentialGroup()
+                        .addComponent(p6maleBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(p6femaleBtn))
+                    .addComponent(p6answer2TF)
+                    .addComponent(p6Answer1TF))
+                .addContainerGap(330, Short.MAX_VALUE))
         );
         panelSixLayout.setVerticalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 563, Short.MAX_VALUE)
+            .addGroup(panelSixLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(p6mainHeadingLbl)
+                .addGap(48, 48, 48)
+                .addComponent(p6candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p6maleBtn)
+                    .addComponent(p6femaleBtn))
+                .addGap(78, 78, 78)
+                .addComponent(p6Q1Lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(p6Answer1TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(p6Q2Lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(p6answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
         );
 
         mainPanel.add(panelSix, "card7");
@@ -340,6 +523,18 @@ public class PollGui extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_p3Answer1TFActionPerformed
 
+    private void p4Answer1TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p4Answer1TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_p4Answer1TFActionPerformed
+
+    private void p5Answer1TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p5Answer1TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_p5Answer1TFActionPerformed
+
+    private void p6Answer1TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p6Answer1TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_p6Answer1TFActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -379,7 +574,6 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JButton adminUserBtn;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroupP3;
-    private javax.swing.JComboBox<String> candidateComboBox;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -387,14 +581,39 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel mainHeadingLbl;
     private javax.swing.JLabel mainHeadingLbl1;
-    private javax.swing.JLabel mainHeadingLbl2;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JTextField p3Answer1TF;
-    private javax.swing.JRadioButton p3FemaleBnt;
     private javax.swing.JLabel p3Q1Lbl;
     private javax.swing.JLabel p3Q2Lbl;
     private javax.swing.JTextField p3answer2TF;
+    private javax.swing.JComboBox<String> p3candidateComboBox;
+    private javax.swing.JRadioButton p3femaleBtn;
+    private javax.swing.JLabel p3mainHeadingLbl;
     private javax.swing.JRadioButton p3maleBtn;
+    private javax.swing.JTextField p4Answer1TF;
+    private javax.swing.JLabel p4Q1Lbl;
+    private javax.swing.JLabel p4Q2Lbl;
+    private javax.swing.JTextField p4answer2TF;
+    private javax.swing.JComboBox<String> p4candidateComboBox;
+    private javax.swing.JRadioButton p4femaleBtn;
+    private javax.swing.JLabel p4mainHeadingLbl;
+    private javax.swing.JRadioButton p4maleBtn;
+    private javax.swing.JTextField p5Answer1TF;
+    private javax.swing.JLabel p5Q1Lbl;
+    private javax.swing.JLabel p5Q2Lbl;
+    private javax.swing.JTextField p5answer2TF;
+    private javax.swing.JComboBox<String> p5candidateComboBox;
+    private javax.swing.JRadioButton p5femaleBtn;
+    private javax.swing.JLabel p5mainHeadingLbl;
+    private javax.swing.JRadioButton p5maleBtn;
+    private javax.swing.JTextField p6Answer1TF;
+    private javax.swing.JLabel p6Q1Lbl;
+    private javax.swing.JLabel p6Q2Lbl;
+    private javax.swing.JTextField p6answer2TF;
+    private javax.swing.JComboBox<String> p6candidateComboBox;
+    private javax.swing.JRadioButton p6femaleBtn;
+    private javax.swing.JLabel p6mainHeadingLbl;
+    private javax.swing.JRadioButton p6maleBtn;
     private javax.swing.JPanel panelFive;
     private javax.swing.JPanel panelFour;
     private javax.swing.JPanel panelOne;

@@ -112,9 +112,6 @@
                   <Font name="sansserif" size="18" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Election Applicaion 2018"/>
-                <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-                  <Point value="[-32500, -32500]"/>
-                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="userTypeLbl">
@@ -207,9 +204,6 @@
                   <Font name="sansserif" size="18" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Election Applicaion 2018"/>
-                <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-                  <Point value="[-32500, -32500]"/>
-                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
@@ -260,12 +254,12 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="p3Q2Lbl" min="-2" max="-2" attributes="0"/>
                           <Component id="p3Q1Lbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="candidateComboBox" min="-2" max="-2" attributes="0"/>
-                          <Component id="mainHeadingLbl2" max="32767" attributes="0"/>
+                          <Component id="p3candidateComboBox" min="-2" max="-2" attributes="0"/>
+                          <Component id="p3mainHeadingLbl" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="p3maleBtn" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="p3FemaleBnt" min="-2" max="-2" attributes="0"/>
+                              <Component id="p3femaleBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="p3answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p3Answer1TF" alignment="0" max="32767" attributes="0"/>
@@ -278,13 +272,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="mainHeadingLbl2" min="-2" max="-2" attributes="0"/>
+                      <Component id="p3mainHeadingLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                      <Component id="candidateComboBox" min="-2" max="-2" attributes="0"/>
+                      <Component id="p3candidateComboBox" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="77" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="p3maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="p3FemaleBnt" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p3femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                       <Component id="p3Q1Lbl" min="-2" max="-2" attributes="0"/>
@@ -300,18 +294,15 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="mainHeadingLbl2">
+            <Component class="javax.swing.JLabel" name="p3mainHeadingLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="sansserif" size="18" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Election Applicaion 2018"/>
-                <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-                  <Point value="[-32500, -32500]"/>
-                </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="candidateComboBox">
+            <Component class="javax.swing.JComboBox" name="p3candidateComboBox">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
@@ -334,7 +325,7 @@
                 <Property name="text" type="java.lang.String" value="Male"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="p3FemaleBnt">
+            <Component class="javax.swing.JRadioButton" name="p3femaleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroupP3"/>
@@ -377,15 +368,114 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="598" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="p4Q2Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p4Q1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p4candidateComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p4mainHeadingLbl" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="p4maleBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="p4femaleBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="p4answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p4Answer1TF" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="563" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="p4mainHeadingLbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <Component id="p4candidateComboBox" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p4maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p4femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                      <Component id="p4Q1Lbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="p4Answer1TF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="p4Q2Lbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="p4answer2TF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="p4mainHeadingLbl">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="sansserif" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Election Applicaion 2018"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="p4candidateComboBox">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="p4maleBtn">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupP3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Male"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="p4femaleBtn">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupP3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Female"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p4Q1Lbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Q1: Is this your first time voting?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p4Q2Lbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="p4Answer1TF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Answer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p4Answer1TFActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="p4answer2TF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Answer"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelFive">
           <Constraints>
@@ -397,15 +487,114 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="598" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="p5Q2Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p5Q1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p5candidateComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p5mainHeadingLbl" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="p5maleBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="p5femaleBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="p5answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p5Answer1TF" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="563" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="p5mainHeadingLbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <Component id="p5candidateComboBox" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p5maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p5femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                      <Component id="p5Q1Lbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="p5Answer1TF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="p5Q2Lbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="p5answer2TF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="p5mainHeadingLbl">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="sansserif" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Election Applicaion 2018"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="p5candidateComboBox">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="p5maleBtn">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupP3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Male"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="p5femaleBtn">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupP3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Female"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p5Q1Lbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Q1: Is this your first time voting?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p5Q2Lbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="p5Answer1TF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Answer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p5Answer1TFActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="p5answer2TF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Answer"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelSix">
           <Constraints>
@@ -417,15 +606,114 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="598" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="p6Q2Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p6Q1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p6candidateComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="p6mainHeadingLbl" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="p6maleBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="p6femaleBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="p6answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p6Answer1TF" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="563" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="p6mainHeadingLbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <Component id="p6candidateComboBox" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p6maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p6femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                      <Component id="p6Q1Lbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="p6Answer1TF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="p6Q2Lbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="p6answer2TF" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="p6mainHeadingLbl">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="sansserif" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Election Applicaion 2018"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="p6candidateComboBox">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="p6maleBtn">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupP3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Male"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="p6femaleBtn">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroupP3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Female"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p6Q1Lbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Q1: Is this your first time voting?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p6Q2Lbl">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="p6Answer1TF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Answer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p6Answer1TFActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="p6answer2TF">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Answer"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
       </SubComponents>
     </Container>
