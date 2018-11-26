@@ -754,26 +754,30 @@ public class PollGui extends javax.swing.JFrame {
             voterAge = ageGrp4Btn.getText();
         }        
         
-        //convert gender group btn to String
+    
+        
+        
+        Question q;
+        
+        
+        
+        
+        
+        
+        
+        
+        if (voterAge.equals("18 - 25")){
+            q1 = p3Answer1TF.getText();
+            q2 = p3Answer2TF.getText();
+            String candidate = (String)p3candidateComboBox.getSelectedItem( );
+                    //convert gender group btn to String
         if (p3maleBtn.isSelected()){
             gender = p3maleBtn.getText();
         }
         if (p3femaleBtn.isSelected()){
             gender = p3maleBtn.getText();
-        }      
-        
-        
-        Question q;
-        
-        String candidate = (String)p3candidateComboBox.getSelectedItem( );
-        
-        q1 = p3Answer1TF.getText();
-        
-        q2 = p3Answer2TF.getText();
-        
-        
-        if (voterAge.equals("18 - 25")){
-            
+        }  
+        q = new age18to25(voterAge,candidate,gender,q1,q2);
         }
         
         
