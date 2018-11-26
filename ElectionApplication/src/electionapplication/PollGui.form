@@ -260,7 +260,7 @@
                           <Component id="p3answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p3Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                      <EmptySpace pref="279" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -336,7 +336,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="p3Q2Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+                <Property name="text" type="java.lang.String" value="Q2: Have you lived abroad (&gt; 3 month period)?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="p3Answer1TF">
@@ -379,7 +379,7 @@
                           <Component id="p4answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p4Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                      <EmptySpace pref="236" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -450,12 +450,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="p4Q1Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q1: Is this your first time voting?"/>
+                <Property name="text" type="java.lang.String" value="Q1: Have you voted in previous presidential elections?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="p4Q2Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+                <Property name="text" type="java.lang.String" value="Q2: What is your marrage status?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="p4Answer1TF">
@@ -498,7 +498,7 @@
                           <Component id="p5answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p5Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                      <EmptySpace pref="52" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -569,12 +569,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="p5Q1Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q1: Is this your first time voting?"/>
+                <Property name="text" type="java.lang.String" value="Q1: Do you have any children?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="p5Q2Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+                <Property name="text" type="java.lang.String" value="Q2: If you own a car, what type of of car is it (diesel / petrol / hybrid / electric)?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="p5Answer1TF">
@@ -617,7 +617,7 @@
                           <Component id="p6answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p6Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="330" max="32767" attributes="0"/>
+                      <EmptySpace pref="176" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -688,12 +688,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="p6Q1Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q1: Is this your first time voting?"/>
+                <Property name="text" type="java.lang.String" value="Q1: Who did you vote for in the previous presidential election?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="p6Q2Lbl">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Q2: Lets pick this question another time?"/>
+                <Property name="text" type="java.lang.String" value="Q2: Do you have a smart phone?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="p6Answer1TF">

@@ -236,7 +236,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p3Q1Lbl.setText("Q1: Is this your first time voting?");
 
-        p3Q2Lbl.setText("Q2: Lets pick this question another time?");
+        p3Q2Lbl.setText("Q2: Have you lived abroad (> 3 month period)?");
 
         p3Answer1TF.setText("Answer");
         p3Answer1TF.addActionListener(new java.awt.event.ActionListener() {
@@ -264,7 +264,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p3femaleBtn))
                     .addComponent(p3answer2TF)
                     .addComponent(p3Answer1TF))
-                .addContainerGap(330, Short.MAX_VALUE))
+                .addContainerGap(279, Short.MAX_VALUE))
         );
         panelThreeLayout.setVerticalGroup(
             panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -301,9 +301,9 @@ public class PollGui extends javax.swing.JFrame {
         buttonGroupP3.add(p4femaleBtn);
         p4femaleBtn.setText("Female");
 
-        p4Q1Lbl.setText("Q1: Is this your first time voting?");
+        p4Q1Lbl.setText("Q1: Have you voted in previous presidential elections?");
 
-        p4Q2Lbl.setText("Q2: Lets pick this question another time?");
+        p4Q2Lbl.setText("Q2: What is your marrage status?");
 
         p4Answer1TF.setText("Answer");
         p4Answer1TF.addActionListener(new java.awt.event.ActionListener() {
@@ -331,7 +331,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p4femaleBtn))
                     .addComponent(p4answer2TF)
                     .addComponent(p4Answer1TF))
-                .addContainerGap(330, Short.MAX_VALUE))
+                .addContainerGap(236, Short.MAX_VALUE))
         );
         panelFourLayout.setVerticalGroup(
             panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -368,9 +368,9 @@ public class PollGui extends javax.swing.JFrame {
         buttonGroupP3.add(p5femaleBtn);
         p5femaleBtn.setText("Female");
 
-        p5Q1Lbl.setText("Q1: Is this your first time voting?");
+        p5Q1Lbl.setText("Q1: Do you have any children?");
 
-        p5Q2Lbl.setText("Q2: Lets pick this question another time?");
+        p5Q2Lbl.setText("Q2: If you own a car, what type of of car is it (diesel / petrol / hybrid / electric)?");
 
         p5Answer1TF.setText("Answer");
         p5Answer1TF.addActionListener(new java.awt.event.ActionListener() {
@@ -398,7 +398,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p5femaleBtn))
                     .addComponent(p5answer2TF)
                     .addComponent(p5Answer1TF))
-                .addContainerGap(330, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         panelFiveLayout.setVerticalGroup(
             panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -435,9 +435,9 @@ public class PollGui extends javax.swing.JFrame {
         buttonGroupP3.add(p6femaleBtn);
         p6femaleBtn.setText("Female");
 
-        p6Q1Lbl.setText("Q1: Is this your first time voting?");
+        p6Q1Lbl.setText("Q1: Who did you vote for in the previous presidential election?");
 
-        p6Q2Lbl.setText("Q2: Lets pick this question another time?");
+        p6Q2Lbl.setText("Q2: Do you have a smart phone?");
 
         p6Answer1TF.setText("Answer");
         p6Answer1TF.addActionListener(new java.awt.event.ActionListener() {
@@ -465,7 +465,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p6femaleBtn))
                     .addComponent(p6answer2TF)
                     .addComponent(p6Answer1TF))
-                .addContainerGap(330, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
         panelSixLayout.setVerticalGroup(
             panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
