@@ -15,8 +15,7 @@ public class PollGui extends javax.swing.JFrame {
 
     
     ArrayList<Question> poll;
-    private String voterAge;
-    private String gender;
+
     
     /**
      * Creates new form PollGui
@@ -77,7 +76,7 @@ public class PollGui extends javax.swing.JFrame {
         p3Q1Lbl = new javax.swing.JLabel();
         p3Q2Lbl = new javax.swing.JLabel();
         p3Answer1TF = new javax.swing.JTextField();
-        p3answer2TF = new javax.swing.JTextField();
+        p3Answer2TF = new javax.swing.JTextField();
         p3SubmitBtn = new javax.swing.JButton();
         panelFour = new javax.swing.JPanel();
         p4mainHeadingLbl = new javax.swing.JLabel();
@@ -87,7 +86,7 @@ public class PollGui extends javax.swing.JFrame {
         p4Q1Lbl = new javax.swing.JLabel();
         p4Q2Lbl = new javax.swing.JLabel();
         p4Answer1TF = new javax.swing.JTextField();
-        p4answer2TF = new javax.swing.JTextField();
+        p4Answer2TF = new javax.swing.JTextField();
         p4SubmitBtn = new javax.swing.JButton();
         panelFive = new javax.swing.JPanel();
         p5mainHeadingLbl = new javax.swing.JLabel();
@@ -97,7 +96,7 @@ public class PollGui extends javax.swing.JFrame {
         p5Q1Lbl = new javax.swing.JLabel();
         p5Q2Lbl = new javax.swing.JLabel();
         p5Answer1TF = new javax.swing.JTextField();
-        p5answer2TF = new javax.swing.JTextField();
+        p5Answer2TF = new javax.swing.JTextField();
         p5SubmitBtn = new javax.swing.JButton();
         panelSix = new javax.swing.JPanel();
         p6mainHeadingLbl = new javax.swing.JLabel();
@@ -107,7 +106,7 @@ public class PollGui extends javax.swing.JFrame {
         p6Q1Lbl = new javax.swing.JLabel();
         p6Q2Lbl = new javax.swing.JLabel();
         p6Answer1TF = new javax.swing.JTextField();
-        p6answer2TF = new javax.swing.JTextField();
+        p6Answer2TF = new javax.swing.JTextField();
         p6SubmitBtn = new javax.swing.JButton();
         panelSeven = new javax.swing.JPanel();
         p7mainHeadingLbl = new javax.swing.JLabel();
@@ -264,7 +263,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        p3answer2TF.setText("Answer");
+        p3Answer2TF.setText("Answer");
 
         p3SubmitBtn.setText("Submit");
         p3SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -288,7 +287,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p3maleBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(p3femaleBtn))
-                    .addComponent(p3answer2TF)
+                    .addComponent(p3Answer2TF)
                     .addComponent(p3Answer1TF))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
                 .addComponent(p3SubmitBtn)
@@ -313,7 +312,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addComponent(p3Q2Lbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(p3answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p3Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(p3SubmitBtn))
                 .addGap(113, 113, 113))
         );
@@ -342,7 +341,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        p4answer2TF.setText("Answer");
+        p4Answer2TF.setText("Answer");
 
         p4SubmitBtn.setText("Submit");
 
@@ -361,7 +360,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p4maleBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(p4femaleBtn))
-                    .addComponent(p4answer2TF)
+                    .addComponent(p4Answer2TF)
                     .addComponent(p4Answer1TF))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(p4SubmitBtn)
@@ -386,7 +385,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addComponent(p4Q2Lbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(p4answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p4Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(p4SubmitBtn))
                 .addGap(113, 113, 113))
         );
@@ -415,7 +414,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        p5answer2TF.setText("Answer");
+        p5Answer2TF.setText("Answer");
 
         p5SubmitBtn.setText("Submit");
 
@@ -434,7 +433,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p5maleBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(p5femaleBtn))
-                    .addComponent(p5answer2TF)
+                    .addComponent(p5Answer2TF)
                     .addComponent(p5Answer1TF))
                 .addContainerGap(52, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFiveLayout.createSequentialGroup()
@@ -460,7 +459,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addComponent(p5Q2Lbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(p5answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(p5Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(p5SubmitBtn)
                 .addGap(68, 68, 68))
@@ -490,7 +489,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        p6answer2TF.setText("Answer");
+        p6Answer2TF.setText("Answer");
 
         p6SubmitBtn.setText("Submit");
 
@@ -509,7 +508,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addComponent(p6maleBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(p6femaleBtn))
-                    .addComponent(p6answer2TF)
+                    .addComponent(p6Answer2TF)
                     .addComponent(p6Answer1TF))
                 .addGap(47, 47, 47)
                 .addComponent(p6SubmitBtn)
@@ -534,7 +533,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addComponent(p6Q2Lbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(p6answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p6Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(p6SubmitBtn))
                 .addGap(113, 113, 113))
         );
@@ -734,6 +733,14 @@ public class PollGui extends javax.swing.JFrame {
 
     private void p3SubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p3SubmitBtnActionPerformed
         // TODO add your handling code here:
+        
+        String q1 = "";
+        String q2 = "";
+        String voterAge = null;
+        String gender = null;
+        
+        
+        //convert age group btn to String
         if (ageGrp1Btn.isSelected()){
             voterAge = ageGrp1Btn.getText();
         }
@@ -747,7 +754,7 @@ public class PollGui extends javax.swing.JFrame {
             voterAge = ageGrp4Btn.getText();
         }        
         
-        String p3candidateComboBox;
+        //convert gender group btn to String
         if (p3maleBtn.isSelected()){
             gender = p3maleBtn.getText();
         }
@@ -755,10 +762,21 @@ public class PollGui extends javax.swing.JFrame {
             gender = p3maleBtn.getText();
         }      
         
-        String p3Answer1TF;
-        String p3answer2TF;
         
         Question q;
+        
+        String candidate = (String)p3candidateComboBox.getSelectedItem( );
+        
+        q1 = p3Answer1TF.getText();
+        
+        q2 = p3Answer2TF.getText();
+        
+        
+        if (voterAge.equals("18 - 25")){
+            
+        }
+        
+        
         
         
         
@@ -817,37 +835,37 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JLabel mainHeadingLbl1;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JTextField p3Answer1TF;
+    private javax.swing.JTextField p3Answer2TF;
     private javax.swing.JLabel p3Q1Lbl;
     private javax.swing.JLabel p3Q2Lbl;
     private javax.swing.JButton p3SubmitBtn;
-    private javax.swing.JTextField p3answer2TF;
     private javax.swing.JComboBox<String> p3candidateComboBox;
     private javax.swing.JRadioButton p3femaleBtn;
     private javax.swing.JLabel p3mainHeadingLbl;
     private javax.swing.JRadioButton p3maleBtn;
     private javax.swing.JTextField p4Answer1TF;
+    private javax.swing.JTextField p4Answer2TF;
     private javax.swing.JLabel p4Q1Lbl;
     private javax.swing.JLabel p4Q2Lbl;
     private javax.swing.JButton p4SubmitBtn;
-    private javax.swing.JTextField p4answer2TF;
     private javax.swing.JComboBox<String> p4candidateComboBox;
     private javax.swing.JRadioButton p4femaleBtn;
     private javax.swing.JLabel p4mainHeadingLbl;
     private javax.swing.JRadioButton p4maleBtn;
     private javax.swing.JTextField p5Answer1TF;
+    private javax.swing.JTextField p5Answer2TF;
     private javax.swing.JLabel p5Q1Lbl;
     private javax.swing.JLabel p5Q2Lbl;
     private javax.swing.JButton p5SubmitBtn;
-    private javax.swing.JTextField p5answer2TF;
     private javax.swing.JComboBox<String> p5candidateComboBox;
     private javax.swing.JRadioButton p5femaleBtn;
     private javax.swing.JLabel p5mainHeadingLbl;
     private javax.swing.JRadioButton p5maleBtn;
     private javax.swing.JTextField p6Answer1TF;
+    private javax.swing.JTextField p6Answer2TF;
     private javax.swing.JLabel p6Q1Lbl;
     private javax.swing.JLabel p6Q2Lbl;
     private javax.swing.JButton p6SubmitBtn;
-    private javax.swing.JTextField p6answer2TF;
     private javax.swing.JComboBox<String> p6candidateComboBox;
     private javax.swing.JRadioButton p6femaleBtn;
     private javax.swing.JLabel p6mainHeadingLbl;

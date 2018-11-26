@@ -261,7 +261,7 @@
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="p3femaleBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="p3answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p3Answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p3Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="121" max="32767" attributes="0"/>
@@ -290,7 +290,7 @@
                       <Component id="p3Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="p3answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p3Answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p3SubmitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
@@ -356,7 +356,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p3Answer1TFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="p3answer2TF">
+            <Component class="javax.swing.JTextField" name="p3Answer2TF">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
@@ -393,7 +393,7 @@
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="p4femaleBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="p4answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p4Answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p4Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="90" max="32767" attributes="0"/>
@@ -422,7 +422,7 @@
                       <Component id="p4Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="p4answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p4Answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p4SubmitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
@@ -488,7 +488,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p4Answer1TFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="p4answer2TF">
+            <Component class="javax.swing.JTextField" name="p4Answer2TF">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
@@ -522,7 +522,7 @@
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="p5femaleBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="p5answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p5Answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p5Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="52" max="32767" attributes="0"/>
@@ -553,7 +553,7 @@
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="p5Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="p5answer2TF" min="-2" max="-2" attributes="0"/>
+                      <Component id="p5Answer2TF" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="p5SubmitBtn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
@@ -619,7 +619,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p5Answer1TFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="p5answer2TF">
+            <Component class="javax.swing.JTextField" name="p5Answer2TF">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
@@ -653,7 +653,7 @@
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="p6femaleBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="p6answer2TF" alignment="0" max="32767" attributes="0"/>
+                          <Component id="p6Answer2TF" alignment="0" max="32767" attributes="0"/>
                           <Component id="p6Answer1TF" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
@@ -682,7 +682,7 @@
                       <Component id="p6Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="p6answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p6Answer2TF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p6SubmitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
@@ -748,7 +748,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p6Answer1TFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="p6answer2TF">
+            <Component class="javax.swing.JTextField" name="p6Answer2TF">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Answer"/>
               </Properties>
