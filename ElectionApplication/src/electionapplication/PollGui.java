@@ -5,17 +5,25 @@
  */
 package electionapplication;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author markk
  */
 public class PollGui extends javax.swing.JFrame {
 
+    
+    ArrayList<Question> poll;
+    
     /**
      * Creates new form PollGui
      */
     public PollGui() {
         initComponents();
+        
+        poll = new ArrayList<> ();
+        
         
     panelOne.setVisible(true);
     panelTwo.setVisible(false);
@@ -38,9 +46,11 @@ public class PollGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroupP3 = new javax.swing.ButtonGroup();
+        panel3Group = new javax.swing.ButtonGroup();
         ageGroup = new javax.swing.ButtonGroup();
+        panel6Group = new javax.swing.ButtonGroup();
+        panel5Group = new javax.swing.ButtonGroup();
+        panel4Group = new javax.swing.ButtonGroup();
         mainPanel = new javax.swing.JPanel();
         panelOne = new javax.swing.JPanel();
         mainHeadingLbl = new javax.swing.JLabel();
@@ -91,7 +101,7 @@ public class PollGui extends javax.swing.JFrame {
         p6Answer1TF = new javax.swing.JTextField();
         p6answer2TF = new javax.swing.JTextField();
         panelSeven = new javax.swing.JPanel();
-        p6mainHeadingLbl1 = new javax.swing.JLabel();
+        p7mainHeadingLbl = new javax.swing.JLabel();
         ageGrp1Btn = new javax.swing.JRadioButton();
         ageGrp2Lbl = new javax.swing.JRadioButton();
         ageGrp3Lbl = new javax.swing.JRadioButton();
@@ -228,10 +238,10 @@ public class PollGui extends javax.swing.JFrame {
 
         p3candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        buttonGroupP3.add(p3maleBtn);
+        panel3Group.add(p3maleBtn);
         p3maleBtn.setText("Male");
 
-        buttonGroupP3.add(p3femaleBtn);
+        panel3Group.add(p3femaleBtn);
         p3femaleBtn.setText("Female");
 
         p3Q1Lbl.setText("Q1: Is this your first time voting?");
@@ -295,10 +305,10 @@ public class PollGui extends javax.swing.JFrame {
 
         p4candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        buttonGroupP3.add(p4maleBtn);
+        panel4Group.add(p4maleBtn);
         p4maleBtn.setText("Male");
 
-        buttonGroupP3.add(p4femaleBtn);
+        panel4Group.add(p4femaleBtn);
         p4femaleBtn.setText("Female");
 
         p4Q1Lbl.setText("Q1: Have you voted in previous presidential elections?");
@@ -362,10 +372,10 @@ public class PollGui extends javax.swing.JFrame {
 
         p5candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        buttonGroupP3.add(p5maleBtn);
+        panel5Group.add(p5maleBtn);
         p5maleBtn.setText("Male");
 
-        buttonGroupP3.add(p5femaleBtn);
+        panel5Group.add(p5femaleBtn);
         p5femaleBtn.setText("Female");
 
         p5Q1Lbl.setText("Q1: Do you have any children?");
@@ -429,10 +439,10 @@ public class PollGui extends javax.swing.JFrame {
 
         p6candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        buttonGroupP3.add(p6maleBtn);
+        panel6Group.add(p6maleBtn);
         p6maleBtn.setText("Male");
 
-        buttonGroupP3.add(p6femaleBtn);
+        panel6Group.add(p6femaleBtn);
         p6femaleBtn.setText("Female");
 
         p6Q1Lbl.setText("Q1: Who did you vote for in the previous presidential election?");
@@ -491,8 +501,8 @@ public class PollGui extends javax.swing.JFrame {
 
         mainPanel.add(panelSix, "card7");
 
-        p6mainHeadingLbl1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        p6mainHeadingLbl1.setText("Election Applicaion 2018");
+        p7mainHeadingLbl.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        p7mainHeadingLbl.setText("Election Applicaion 2018");
 
         ageGroup.add(ageGrp1Btn);
         ageGrp1Btn.setText("18 - 25");
@@ -534,7 +544,7 @@ public class PollGui extends javax.swing.JFrame {
             panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelSevenLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(p6mainHeadingLbl1, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
+                .addComponent(p7mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
                 .addGap(320, 320, 320))
             .addGroup(panelSevenLayout.createSequentialGroup()
                 .addGroup(panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -556,7 +566,7 @@ public class PollGui extends javax.swing.JFrame {
             panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelSevenLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(p6mainHeadingLbl1)
+                .addComponent(p7mainHeadingLbl)
                 .addGap(84, 84, 84)
                 .addComponent(ageGroupLbl)
                 .addGap(57, 57, 57)
@@ -725,8 +735,6 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton ageGrp2Lbl;
     private javax.swing.JRadioButton ageGrp3Lbl;
     private javax.swing.JRadioButton ageGrp4Lbl;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroupP3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -766,8 +774,12 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> p6candidateComboBox;
     private javax.swing.JRadioButton p6femaleBtn;
     private javax.swing.JLabel p6mainHeadingLbl;
-    private javax.swing.JLabel p6mainHeadingLbl1;
     private javax.swing.JRadioButton p6maleBtn;
+    private javax.swing.JLabel p7mainHeadingLbl;
+    private javax.swing.ButtonGroup panel3Group;
+    private javax.swing.ButtonGroup panel4Group;
+    private javax.swing.ButtonGroup panel5Group;
+    private javax.swing.ButtonGroup panel6Group;
     private javax.swing.JPanel panelFive;
     private javax.swing.JPanel panelFour;
     private javax.swing.JPanel panelOne;

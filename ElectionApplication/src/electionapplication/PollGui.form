@@ -2,11 +2,15 @@
 
 <Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
-    </Component>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroupP3">
+    <Component class="javax.swing.ButtonGroup" name="panel3Group">
     </Component>
     <Component class="javax.swing.ButtonGroup" name="ageGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="panel6Group">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="panel5Group">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="panel4Group">
     </Component>
   </NonVisualComponents>
   <Properties>
@@ -316,7 +320,7 @@
             <Component class="javax.swing.JRadioButton" name="p3maleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel3Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Male"/>
               </Properties>
@@ -324,7 +328,7 @@
             <Component class="javax.swing.JRadioButton" name="p3femaleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel3Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Female"/>
               </Properties>
@@ -435,7 +439,7 @@
             <Component class="javax.swing.JRadioButton" name="p4maleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel4Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Male"/>
               </Properties>
@@ -443,7 +447,7 @@
             <Component class="javax.swing.JRadioButton" name="p4femaleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel4Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Female"/>
               </Properties>
@@ -554,7 +558,7 @@
             <Component class="javax.swing.JRadioButton" name="p5maleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel5Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Male"/>
               </Properties>
@@ -562,7 +566,7 @@
             <Component class="javax.swing.JRadioButton" name="p5femaleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel5Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Female"/>
               </Properties>
@@ -673,7 +677,7 @@
             <Component class="javax.swing.JRadioButton" name="p6maleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel6Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Male"/>
               </Properties>
@@ -681,7 +685,7 @@
             <Component class="javax.swing.JRadioButton" name="p6femaleBtn">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroupP3"/>
+                  <ComponentRef name="panel6Group"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Female"/>
               </Properties>
@@ -723,7 +727,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="p6mainHeadingLbl1" pref="301" max="32767" attributes="0"/>
+                      <Component id="p7mainHeadingLbl" pref="301" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="320" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -753,7 +757,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="p6mainHeadingLbl1" min="-2" max="-2" attributes="0"/>
+                      <Component id="p7mainHeadingLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                       <Component id="ageGroupLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
@@ -772,7 +776,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="p6mainHeadingLbl1">
+            <Component class="javax.swing.JLabel" name="p7mainHeadingLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="sansserif" size="18" style="1"/>
