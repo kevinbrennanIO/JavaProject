@@ -27,6 +27,11 @@ public class Question {
     public void setVoterAge(String voterAge) {
         this.voterAge = voterAge;
     }
+
+   
+    public String printDetails(){
+        return " age group "+voterAge;
+    }
     
     
 }

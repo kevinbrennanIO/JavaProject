@@ -166,7 +166,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="308" max="32767" attributes="0"/>
+                      <EmptySpace pref="362" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -221,8 +221,11 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Report 1"/>
+                <Property name="text" type="java.lang.String" value="View"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButton4">
               <Properties>

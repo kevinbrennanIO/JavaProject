@@ -5,7 +5,14 @@
  */
 package electionapplication;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,33 +20,25 @@ import java.util.ArrayList;
  */
 public class PollGui extends javax.swing.JFrame {
 
-    
     ArrayList<Question> poll;
 
-    
     /**
      * Creates new form PollGui
      */
     public PollGui() {
         initComponents();
-        
-        poll = new ArrayList<> ();
-        
-       
-        
-        
-        
-    panelOne.setVisible(true);
-    panelTwo.setVisible(false);
-    panelThree.setVisible(false);
-    panelFour.setVisible(false);
-    panelFive.setVisible(false);
-    panelSix.setVisible(false);
-    panelSeven.setVisible(false);
-        
+
+        poll = new ArrayList<>();
+
+        panelOne.setVisible(true);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(false);
+        panelFour.setVisible(false);
+        panelFive.setVisible(false);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(false);
+
     }
-    
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -186,7 +185,12 @@ public class PollGui extends javax.swing.JFrame {
 
         jButton2.setText("Save");
 
-        jButton3.setText("Report 1");
+        jButton3.setText("View");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Report 2");
 
@@ -215,7 +219,7 @@ public class PollGui extends javax.swing.JFrame {
                         .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton4)
                             .addComponent(jButton2))))
-                .addContainerGap(308, Short.MAX_VALUE))
+                .addContainerGap(362, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButton5)
@@ -643,24 +647,24 @@ public class PollGui extends javax.swing.JFrame {
 
     private void adminUserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminUserBtnActionPerformed
         // TODO add your handling code here:
-     panelOne.setVisible(false);
-    panelTwo.setVisible(true);
-    panelThree.setVisible(false);
-    panelFour.setVisible(false);
-    panelFive.setVisible(false);
-    panelSix.setVisible(false);
-    panelSeven.setVisible(false);
+        panelOne.setVisible(false);
+        panelTwo.setVisible(true);
+        panelThree.setVisible(false);
+        panelFour.setVisible(false);
+        panelFive.setVisible(false);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(false);
     }//GEN-LAST:event_adminUserBtnActionPerformed
 
     private void voterUserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voterUserBtnActionPerformed
         // TODO add your handling code here:
-    panelOne.setVisible(false);
-    panelTwo.setVisible(false);
-    panelThree.setVisible(false);
-    panelFour.setVisible(false);
-    panelFive.setVisible(false);
-    panelSix.setVisible(false);
-    panelSeven.setVisible(true);
+        panelOne.setVisible(false);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(false);
+        panelFour.setVisible(false);
+        panelFive.setVisible(false);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(true);
     }//GEN-LAST:event_voterUserBtnActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -689,103 +693,123 @@ public class PollGui extends javax.swing.JFrame {
 
     private void ageGrp1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp1BtnActionPerformed
         // TODO add your handling code here:
-    panelOne.setVisible(false);
-    panelTwo.setVisible(false);
-    panelThree.setVisible(true);
-    panelFour.setVisible(false);
-    panelFive.setVisible(false);
-    panelSix.setVisible(false);
-    panelSeven.setVisible(false);
+        panelOne.setVisible(false);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(true);
+        panelFour.setVisible(false);
+        panelFive.setVisible(false);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(false);
     }//GEN-LAST:event_ageGrp1BtnActionPerformed
 
     private void ageGrp2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp2BtnActionPerformed
         // TODO add your handling code here:
         panelOne.setVisible(false);
-    panelTwo.setVisible(false);
-    panelThree.setVisible(false);
-    panelFour.setVisible(true);
-    panelFive.setVisible(false);
-    panelSix.setVisible(false);
-    panelSeven.setVisible(false);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(false);
+        panelFour.setVisible(true);
+        panelFive.setVisible(false);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(false);
     }//GEN-LAST:event_ageGrp2BtnActionPerformed
 
     private void ageGrp3BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp3BtnActionPerformed
         // TODO add your handling code here:
         panelOne.setVisible(false);
-    panelTwo.setVisible(false);
-    panelThree.setVisible(false);
-    panelFour.setVisible(false);
-    panelFive.setVisible(true);
-    panelSix.setVisible(false);
-    panelSeven.setVisible(false);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(false);
+        panelFour.setVisible(false);
+        panelFive.setVisible(true);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(false);
     }//GEN-LAST:event_ageGrp3BtnActionPerformed
 
     private void ageGrp4BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp4BtnActionPerformed
         // TODO add your handling code here:
-    panelOne.setVisible(false);
-    panelTwo.setVisible(false);
-    panelThree.setVisible(false);
-    panelFour.setVisible(false);
-    panelFive.setVisible(false);
-    panelSix.setVisible(true);
-    panelSeven.setVisible(false);
+        panelOne.setVisible(false);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(false);
+        panelFour.setVisible(false);
+        panelFive.setVisible(false);
+        panelSix.setVisible(true);
+        panelSeven.setVisible(false);
     }//GEN-LAST:event_ageGrp4BtnActionPerformed
 
     private void p3SubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p3SubmitBtnActionPerformed
         // TODO add your handling code here:
-        
+
         String q1 = "";
         String q2 = "";
         String voterAge = null;
         String gender = null;
-        
-        
+
         //convert age group btn to String
-        if (ageGrp1Btn.isSelected()){
+        if (ageGrp1Btn.isSelected()) {
             voterAge = ageGrp1Btn.getText();
         }
-        if (ageGrp2Btn.isSelected()){
+        if (ageGrp2Btn.isSelected()) {
             voterAge = ageGrp2Btn.getText();
-        }     
-        if (ageGrp3Btn.isSelected()){
+        }
+        if (ageGrp3Btn.isSelected()) {
             voterAge = ageGrp3Btn.getText();
         }
-        if (ageGrp4Btn.isSelected()){
+        if (ageGrp4Btn.isSelected()) {
             voterAge = ageGrp4Btn.getText();
-        }        
-        
-    
-        
-        
+        }
+
         Question q;
-        
-        
-        
-        
-        
-        String candidate = (String)p3candidateComboBox.getSelectedItem( );
-        
-        
-        if (voterAge.equals("18 - 25")){
+
+        String candidate = (String) p3candidateComboBox.getSelectedItem();
+
+        if (voterAge.equals("18 - 25")) {
             q1 = p3Answer1TF.getText();
             q2 = p3Answer2TF.getText();
-            
-                    //convert gender group btn to String
-        if (p3maleBtn.isSelected()){
-            gender = p3maleBtn.getText();
+
+            //convert gender group btn to String
+            if (p3maleBtn.isSelected()) {
+                gender = p3maleBtn.getText();
+            }
+            if (p3femaleBtn.isSelected()) {
+                gender = p3maleBtn.getText();
+            }
+            q = new age18to25(voterAge, candidate, gender, q1, q2);
+            poll.add(q);
+
         }
-        if (p3femaleBtn.isSelected()){
-            gender = p3maleBtn.getText();
-        }  
-        q = new age18to25(voterAge,candidate,gender,q1,q2);
-        }
+        panelOne.setVisible(true);
+        panelTwo.setVisible(false);
+        panelThree.setVisible(false);
+        panelFour.setVisible(false);
+        panelFive.setVisible(false);
+        panelSix.setVisible(false);
+        panelSeven.setVisible(false);
         
-        
-        
-        
-        
-        
+
+        p3Answer1TF.setText("");
+        p3Answer2TF.setText("");
+        ageGroup.clearSelection();
+        panel3Group.clearSelection();
+
+
     }//GEN-LAST:event_p3SubmitBtnActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        for (Question x : poll) {
+            if (x instanceof age18to25) {
+                age18to25 myA1 = (age18to25) x;
+                JOptionPane.showMessageDialog(null, myA1.printDetails());
+                //} else if (x instanceof Bike) {
+                //    Bike myBike = (Bike) x;
+                //   JOptionPane.showMessageDialog(null, myBike.printDetails());
+                // } else if (x instanceof Bus) {
+                //     Bus myBus = (Bus) x;
+                //       JOptionPane.showMessageDialog(null, myBus.printDetails());
+                //   } else {
+                //      JOptionPane.showMessageDialog(null, x.printDetails());
+            }
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -890,8 +914,4 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JButton voterUserBtn;
     // End of variables declaration//GEN-END:variables
 
-    void visible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
- 
 }
