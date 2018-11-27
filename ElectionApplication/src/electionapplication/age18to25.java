@@ -11,34 +11,57 @@ package electionapplication;
  * @author markk
  */
 public class age18to25 extends Question {
-    private String bracket1q1;
-    private String bracket1q2;
+    private String q1;
+    private String q2;
+    private String candidate;
+    private String gender;
+       
     
-    public age18to25 (String q1, String bracket1q1, String bracket1q2){
-        super (q1);
-        this.bracket1q1=bracket1q1;
-        this.bracket1q2=bracket1q2;
+
+    public age18to25 (String voterAge, String candidate, String gender, String q1, String q2){
+        super (voterAge);
+        this.candidate=candidate;
+        this.gender=gender;
+        this.q1=q1;
+        this.q2=q2;
     }
     
     public age18to25(){
-        this("","","");
+        this("","","","","");
     }
 
-    public String getBracket1q1() {
-        return bracket1q1;
+    public void setQ1(String q1) {
+        this.q1 = q1;
     }
 
-    public void setBracket1q1(String bracket1q1) {
-        this.bracket1q1 = bracket1q1;
+    public void setQ2(String q2) {
+        this.q2 = q2;
     }
 
-    public String getBracket1q2() {
-        return bracket1q2;
+    public void setCandidate(String candidate) {
+        this.candidate = candidate;
+    }
+    
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public void setBracket1q2(String bracket1q2) {
-        this.bracket1q2 = bracket1q2;
+    public String getQ1() {
+        return q1;
     }
+
+    public String getQ2() {
+        return q2;
+    }
+
+    public String getCandidate() {
+        return candidate;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
     
     
 }
