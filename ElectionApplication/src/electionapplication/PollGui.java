@@ -763,13 +763,13 @@ public class PollGui extends javax.swing.JFrame {
         
         
         
-        
+        String candidate = (String)p3candidateComboBox.getSelectedItem( );
         
         
         if (voterAge.equals("18 - 25")){
             q1 = p3Answer1TF.getText();
             q2 = p3Answer2TF.getText();
-            String candidate = (String)p3candidateComboBox.getSelectedItem( );
+            
                     //convert gender group btn to String
         if (p3maleBtn.isSelected()){
             gender = p3maleBtn.getText();
