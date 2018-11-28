@@ -30,7 +30,7 @@ public class Question {
 
    
     public String printDetails(){
-        return " age group "+voterAge;
+        return " Age Group : "+voterAge;
     }
     
     
