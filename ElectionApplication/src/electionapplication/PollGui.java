@@ -5,14 +5,17 @@
  */
 package electionapplication;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -57,8 +60,8 @@ public class PollGui extends javax.swing.JFrame {
         mainPanel = new javax.swing.JPanel();
         panelTwo = new javax.swing.JPanel();
         mainHeadingLbl1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        loadBTN = new javax.swing.JButton();
+        saveBTN = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         panelThree = new javax.swing.JPanel();
@@ -120,26 +123,31 @@ public class PollGui extends javax.swing.JFrame {
         mainPanel.setLayout(new java.awt.CardLayout());
 
         mainHeadingLbl1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 48)); // NOI18N
-        mainHeadingLbl1.setText("Election Applicaion 2018");
+        mainHeadingLbl1.setText("Election Application 2018");
 
-        jButton1.setBackground(new java.awt.Color(0, 215, 255));
-        jButton1.setFont(new java.awt.Font("Castellar", 0, 18)); // NOI18N
-        jButton1.setText("Load");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setPreferredSize(new java.awt.Dimension(150, 50));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        loadBTN.setBackground(new java.awt.Color(0, 215, 255));
+        loadBTN.setFont(new java.awt.Font("Castellar", 0, 18)); // NOI18N
+        loadBTN.setText("Load");
+        loadBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        loadBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        loadBTN.setPreferredSize(new java.awt.Dimension(150, 50));
+        loadBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                loadBTNActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 215, 255));
-        jButton2.setFont(new java.awt.Font("Castellar", 0, 18)); // NOI18N
-        jButton2.setText("Save");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setPreferredSize(new java.awt.Dimension(150, 50));
+        saveBTN.setBackground(new java.awt.Color(0, 215, 255));
+        saveBTN.setFont(new java.awt.Font("Castellar", 0, 18)); // NOI18N
+        saveBTN.setText("Save");
+        saveBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        saveBTN.setPreferredSize(new java.awt.Dimension(150, 50));
+        saveBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveBTNActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(0, 215, 255));
         jButton3.setFont(new java.awt.Font("Castellar", 0, 18)); // NOI18N
@@ -177,11 +185,11 @@ public class PollGui extends javax.swing.JFrame {
                     .addGroup(panelTwoLayout.createSequentialGroup()
                         .addGap(230, 230, 230)
                         .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(loadBTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(230, 230, 230)
                         .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(saveBTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(246, Short.MAX_VALUE))
         );
@@ -192,8 +200,8 @@ public class PollGui extends javax.swing.JFrame {
                 .addComponent(mainHeadingLbl1)
                 .addGap(152, 152, 152)
                 .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(loadBTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(saveBTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(76, 76, 76)
                 .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -499,7 +507,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addComponent(p5mainHeadingLbl)
                 .addGap(41, 41, 41)
                 .addComponent(p5candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p5femaleBtn)
                     .addComponent(p5maleBtn))
@@ -772,9 +780,9 @@ public class PollGui extends javax.swing.JFrame {
                 .addGap(136, 136, 136)
                 .addComponent(userTypeLbl)
                 .addGap(18, 18, 18)
-                .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(adminUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(voterUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(voterUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(adminUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -822,9 +830,29 @@ public class PollGui extends javax.swing.JFrame {
         panelSeven.setVisible(true);
     }//GEN-LAST:event_voterUserBtnActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void loadBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadBTNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        File inFile;
+        FileInputStream fStream;
+        ObjectInputStream oStream;
+        
+        try {
+            inFile = new File("votes.dat");
+            fStream = new FileInputStream(inFile);
+            oStream = new ObjectInputStream(fStream); 
+            
+            poll = (ArrayList<Question>) oStream.readObject();
+            
+           oStream.close(); 
+
+        }
+
+         catch (IOException e) {
+            System.out.println("There was an error writing to file: " + e);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(PollGui.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_loadBTNActionPerformed
 
     private void p3Answer1TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p3Answer1TFActionPerformed
         // TODO add your handling code here:
@@ -1162,7 +1190,67 @@ public class PollGui extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_p3Answer2TFActionPerformed
 
-    /**
+    private void saveBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBTNActionPerformed
+        // TODO add your handling code here:
+        File outFile;
+        FileOutputStream fStream;
+        ObjectOutputStream oStream;
+        //FileWriter fw;
+        //BufferedWriter bw;
+        
+        try {
+            outFile = new File("votes.dat");
+            fStream = new FileOutputStream(outFile);
+            oStream = new ObjectOutputStream(fStream);
+            //fw = new FileWriter(outFile, true);
+            //bw = new BufferedWriter(fw);
+            
+            oStream.writeObject(poll);
+            
+            oStream.close();
+         
+//            for (Question x : poll) {
+//                
+//                if (x instanceof age18to25) {
+//                    age18to25 myB1 = (age18to25) x;
+//                    bw.write(myB1.printDetails());
+//                    bw.newLine();
+//                } else if (x instanceof age25to40) {
+//                    age25to40 myB1 = (age25to40) x;
+//                    bw.write(myB1.printDetails());
+//                    bw.newLine();
+//                } else if (x instanceof age40to65) {
+//                    age40to65 myB1 = (age40to65) x;
+//                    bw.write(myB1.printDetails());
+//                    bw.newLine();
+//                } else if (x instanceof ageOver65) {
+//                    ageOver65 myB1 = (ageOver65) x;
+//                    bw.write(myB1.printDetails());
+//                    bw.newLine();
+//                } else {
+//                    bw.write(x.printDetails());
+//                    bw.newLine();
+//                }
+            }
+            
+//            bw.close();
+            
+         catch (IOException e) {
+            System.out.println("EThere was an error writing to file: " + e);
+        }
+    }//GEN-LAST:event_saveBTNActionPerformed
+     
+    
+       //Load and Save
+      // private void saveBTN(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+   
+                                      
+
+    //private void loadBTNActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+    
+        /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -1197,6 +1285,7 @@ public class PollGui extends javax.swing.JFrame {
         });
     }
 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton adminUserBtn;
     private javax.swing.ButtonGroup ageGroup;
@@ -1205,10 +1294,9 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton ageGrp2Btn;
     private javax.swing.JRadioButton ageGrp3Btn;
     private javax.swing.JRadioButton ageGrp4Btn;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton loadBTN;
     private javax.swing.JLabel mainHeadingLbl;
     private javax.swing.JLabel mainHeadingLbl1;
     private javax.swing.JPanel mainPanel;
@@ -1260,6 +1348,7 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JPanel panelSix;
     private javax.swing.JPanel panelThree;
     private javax.swing.JPanel panelTwo;
+    private javax.swing.JButton saveBTN;
     private javax.swing.JLabel userTypeLbl;
     private javax.swing.JButton voterUserBtn;
     // End of variables declaration//GEN-END:variables

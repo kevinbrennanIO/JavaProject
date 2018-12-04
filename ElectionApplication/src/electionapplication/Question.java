@@ -5,11 +5,14 @@
  */
 package electionapplication;
 
+import java.io.Serializable;
+
+
 /**
  *
  * @author markk
  */
-public class Question {
+public class Question implements Serializable {
     protected String voterAge;
  
     public Question(String voterAge){

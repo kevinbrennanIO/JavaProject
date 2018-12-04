@@ -62,6 +62,6 @@ public class age40to65 extends Question {
 
     @Override
     public String printDetails() {
-        return super.printDetails()+"\n Gender : "+gender+"\n Ans1 : "+q1+"\n Ans2 : "+q2+"\n\n Vote : "+candidate;
+        return super.printDetails()+" -- Gender : "+gender+" -- Children? : "+q1+" -- Car / Fuel type : "+q2+" -- Vote : "+candidate;
     }
 }
