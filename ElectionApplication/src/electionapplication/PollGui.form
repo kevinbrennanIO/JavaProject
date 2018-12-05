@@ -256,7 +256,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="p3SubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="p3SubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="Back18Btn" min="-2" pref="96" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="p3Q1Lbl" min="-2" max="-2" attributes="0"/>
                           <Component id="p3mainHeadingLbl" min="-2" pref="653" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
@@ -306,7 +310,10 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="p3Answer2TF" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="p3SubmitBtn" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Back18Btn" max="32767" attributes="0"/>
+                          <Component id="p3SubmitBtn" pref="40" max="32767" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -478,6 +485,14 @@
                 <Property name="text" type="java.lang.String" value="Gender?"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="Back18Btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Back18BtnActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelFour">
@@ -495,7 +510,11 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="p4Answer1TF" min="-2" pref="386" max="-2" attributes="0"/>
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                          <Component id="p4SubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="p4SubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="back26Btn" min="-2" pref="98" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="p4Q2Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="p4Q1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="p4mainHeadingLbl" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -511,7 +530,7 @@
                           </Group>
                           <Component id="p4Answer2TF" alignment="0" min="-2" pref="420" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="170" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -541,8 +560,11 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="p4Answer2TF" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="p4SubmitBtn" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="back26Btn" max="32767" attributes="0"/>
+                          <Component id="p4SubmitBtn" pref="40" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -698,6 +720,14 @@
                 <Property name="text" type="java.lang.String" value="Gender?"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="back26Btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="back26BtnActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelFive">
@@ -724,6 +754,8 @@
                                       <Component id="p5Answer1TF" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="Back41Btn" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="281" max="-2" attributes="0"/>
@@ -736,7 +768,7 @@
                               <Component id="p5femaleBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="97" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -761,7 +793,10 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="p5Answer2TF" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="p5SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="p5SubmitBtn" min="-2" max="-2" attributes="0"/>
+                          <Component id="Back41Btn" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -905,6 +940,14 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p5SubmitBtnActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JButton" name="Back41Btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Back41BtnActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelSix">
@@ -920,7 +963,6 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="p6SubmitBtn" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="p6Q2Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="p6Q1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -939,8 +981,11 @@
                                   <Component id="p6candidateComboBox" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="p6SubmitBtn" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="back65Btn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="96" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -956,7 +1001,7 @@
                           <Component id="p6femaleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p6maleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="9" max="32767" attributes="0"/>
                       <Component id="p6Q1Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="p6Answer1TF" min="-2" max="-2" attributes="0"/>
@@ -964,8 +1009,11 @@
                       <Component id="p6Q2Lbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="p6Answer2TF" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="p6SubmitBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="p6SubmitBtn" min="-2" max="-2" attributes="0"/>
+                          <Component id="back65Btn" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1110,6 +1158,14 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="p6SubmitBtnActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JButton" name="back65Btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="BACK"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="back65BtnActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panelSeven">
@@ -1141,7 +1197,10 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="406" max="-2" attributes="0"/>
-                              <Component id="ageGroupLbl" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ageBackBtn" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ageGroupLbl" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -1162,7 +1221,9 @@
                           <Component id="ageGrp3Btn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="ageGrp4Btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
+                      <Component id="ageBackBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1271,6 +1332,14 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Age Group:"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="ageBackBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ageBackBtnActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
