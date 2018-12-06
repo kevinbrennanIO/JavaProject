@@ -142,7 +142,7 @@ public class PollGui extends javax.swing.JFrame {
 
         loadBTN.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         loadBTN.setText("Load");
-        loadBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        loadBTN.setBorder(Back18Btn.getBorder());
         loadBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         loadBTN.setPreferredSize(new java.awt.Dimension(150, 50));
         loadBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -153,7 +153,7 @@ public class PollGui extends javax.swing.JFrame {
 
         saveBTN.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         saveBTN.setText("Save");
-        saveBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        saveBTN.setBorder(Back18Btn.getBorder());
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         saveBTN.setPreferredSize(new java.awt.Dimension(150, 50));
         saveBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +164,7 @@ public class PollGui extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jButton3.setText("View");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setBorder(Back18Btn.getBorder());
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setPreferredSize(new java.awt.Dimension(150, 50));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +175,7 @@ public class PollGui extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jButton4.setText("Back");
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.setBorder(Back18Btn.getBorder());
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.setPreferredSize(new java.awt.Dimension(150, 50));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -236,14 +236,14 @@ public class PollGui extends javax.swing.JFrame {
         p3candidateComboBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         p3candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Peter Casey", "Gavin Duffy", "Joan Freeman", "Sean Gallagher", "Michael D Higgins", "Liadh Ni Riada4" }));
 
-        p3maleBtn.setBackground(getBackground());
+        p3maleBtn.setBackground(null);
         panel3Group.add(p3maleBtn);
         p3maleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p3maleBtn.setText("Male");
         p3maleBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         p3maleBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        p3femaleBtn.setBackground(getBackground());
+        p3femaleBtn.setBackground(null);
         panel3Group.add(p3femaleBtn);
         p3femaleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p3femaleBtn.setText("Female");
@@ -277,7 +277,6 @@ public class PollGui extends javax.swing.JFrame {
 
         p3SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p3SubmitBtn.setText("Submit");
-        p3SubmitBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         p3SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p3SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p3SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -294,6 +293,7 @@ public class PollGui extends javax.swing.JFrame {
 
         Back18Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         Back18Btn.setText("Back");
+        Back18Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Back18Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Back18BtnActionPerformed(evt);
@@ -366,12 +366,14 @@ public class PollGui extends javax.swing.JFrame {
         p4candidateComboBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         p4candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Peter Casey", "Gavin Duffy", "Joan Freeman", "Sean Gallagher", "Michael D Higgins", "Liadh Ni Riada" }));
 
+        p4maleBtn.setBackground(null);
         panel4Group.add(p4maleBtn);
         p4maleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p4maleBtn.setText("Male");
         p4maleBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         p4maleBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        p4femaleBtn.setBackground(null);
         panel4Group.add(p4femaleBtn);
         p4femaleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p4femaleBtn.setText("Female");
@@ -402,7 +404,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p4SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p4SubmitBtn.setText("Submit");
-        p4SubmitBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        p4SubmitBtn.setBorder(Back18Btn.getBorder());
         p4SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p4SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p4SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -419,6 +421,7 @@ public class PollGui extends javax.swing.JFrame {
 
         back26Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         back26Btn.setText("Back");
+        back26Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         back26Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 back26BtnActionPerformed(evt);
@@ -491,12 +494,14 @@ public class PollGui extends javax.swing.JFrame {
         p5candidateComboBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         p5candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Peter Casey", "Gavin Duffy", "Joan Freeman", "Sean Gallagher", "Michael D Higgins", "Liadh Ni Riada" }));
 
+        p5maleBtn.setBackground(null);
         panel5Group.add(p5maleBtn);
         p5maleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p5maleBtn.setText("Male");
         p5maleBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         p5maleBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        p5femaleBtn.setBackground(null);
         panel5Group.add(p5femaleBtn);
         p5femaleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p5femaleBtn.setText("Female");
@@ -522,7 +527,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p5SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p5SubmitBtn.setText("Submit");
-        p5SubmitBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        p5SubmitBtn.setBorder(Back18Btn.getBorder());
         p5SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p5SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p5SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -533,6 +538,7 @@ public class PollGui extends javax.swing.JFrame {
 
         Back41Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         Back41Btn.setText("Back");
+        Back41Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Back41Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Back41BtnActionPerformed(evt);
@@ -582,7 +588,7 @@ public class PollGui extends javax.swing.JFrame {
                 .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p5candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -611,6 +617,7 @@ public class PollGui extends javax.swing.JFrame {
         p6candidateComboBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         p6candidateComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Peter Casey", "Gavin Duffy", "Joan Freeman", "Sean Gallagher", "Michael D Higgins", "Liadh Ni Riada" }));
 
+        p6maleBtn.setBackground(null);
         panel6Group.add(p6maleBtn);
         p6maleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p6maleBtn.setText("Male");
@@ -618,6 +625,7 @@ public class PollGui extends javax.swing.JFrame {
         p6maleBtn.setContentAreaFilled(false);
         p6maleBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        p6femaleBtn.setBackground(null);
         panel6Group.add(p6femaleBtn);
         p6femaleBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p6femaleBtn.setText("Female");
@@ -643,7 +651,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p6SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p6SubmitBtn.setText("Submit");
-        p6SubmitBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        p6SubmitBtn.setBorder(Back18Btn.getBorder());
         p6SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p6SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p6SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -654,6 +662,7 @@ public class PollGui extends javax.swing.JFrame {
 
         back65Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         back65Btn.setText("Back");
+        back65Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         back65Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 back65BtnActionPerformed(evt);
@@ -729,6 +738,7 @@ public class PollGui extends javax.swing.JFrame {
         p7mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         p7mainHeadingLbl.setText("Election Application 2018");
 
+        ageGrp1Btn.setBackground(null);
         ageGroup.add(ageGrp1Btn);
         ageGrp1Btn.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
         ageGrp1Btn.setText("18 - 25");
@@ -740,6 +750,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
+        ageGrp2Btn.setBackground(null);
         ageGroup.add(ageGrp2Btn);
         ageGrp2Btn.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
         ageGrp2Btn.setText("26 - 40");
@@ -751,6 +762,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
+        ageGrp3Btn.setBackground(null);
         ageGroup.add(ageGrp3Btn);
         ageGrp3Btn.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
         ageGrp3Btn.setText("41 - 65");
@@ -762,6 +774,7 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
+        ageGrp4Btn.setBackground(null);
         ageGroup.add(ageGrp4Btn);
         ageGrp4Btn.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
         ageGrp4Btn.setText("> 65");
@@ -778,6 +791,7 @@ public class PollGui extends javax.swing.JFrame {
 
         ageBackBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         ageBackBtn.setText("Back");
+        ageBackBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ageBackBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ageBackBtnActionPerformed(evt);
@@ -841,7 +855,7 @@ public class PollGui extends javax.swing.JFrame {
 
         adminUserBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         adminUserBtn.setText("Admin");
-        adminUserBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        adminUserBtn.setBorder(back65Btn.getBorder());
         adminUserBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         adminUserBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         adminUserBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -852,7 +866,7 @@ public class PollGui extends javax.swing.JFrame {
 
         voterUserBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         voterUserBtn.setText("Voter");
-        voterUserBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        voterUserBtn.setBorder(Back18Btn.getBorder());
         voterUserBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         voterUserBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         voterUserBtn.addActionListener(new java.awt.event.ActionListener() {
