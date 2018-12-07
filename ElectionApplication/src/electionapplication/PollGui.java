@@ -1124,7 +1124,7 @@ public class PollGui extends javax.swing.JFrame {
         String q2 = "";
         String voterAge = null;
         String gender = null;
-        String p3Q1 = "";
+        
 
         //convert age group btn to String
         if (ageGrp1Btn.isSelected()) {
@@ -1140,8 +1140,8 @@ public class PollGui extends javax.swing.JFrame {
             voterAge = ageGrp4Btn.getText();
         }
 
-        Question q;
-
+        Question q = null;
+        
         String candidate = (String) p3candidateComboBox.getSelectedItem();
 
         if (voterAge.equals("18 - 25")) {
@@ -1157,9 +1157,15 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p3femaleBtn.getText();
             }
             q = new age18to25(voterAge, candidate, gender, q1, q2);
-            poll.add(q);
-
+            
         }
+        if(q1.equals("")|q2.equals("")|candidate.equals("")){
+            JOptionPane.showMessageDialog(null,"Please answer all questions");
+        
+    }
+        else if(p3maleBtn.isSelected()|p3femaleBtn.isSelected()){
+            
+        poll.add(q);
 
         //move to panel one - new voter or admin
         panelOne.setVisible(true);
@@ -1174,6 +1180,10 @@ public class PollGui extends javax.swing.JFrame {
         p3Answer2TF.setText("");
         ageGroup.clearSelection();
         panel3Group.clearSelection();
+        }
+        else{JOptionPane.showMessageDialog(null,"Please select a gender");
+        
+        }
 
 
     }//GEN-LAST:event_p3SubmitBtnActionPerformed
@@ -1226,7 +1236,7 @@ public class PollGui extends javax.swing.JFrame {
             voterAge = ageGrp4Btn.getText();
         }
 
-        Question q;
+        Question q = null;
 
         String candidate = (String) p4candidateComboBox.getSelectedItem();
 
@@ -1242,9 +1252,16 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p4femaleBtn.getText();
             }
             q = new age25to40(voterAge, candidate, gender, q1, q2);
-            poll.add(q);
-
         }
+            if(q1.equals("")|q2.equals("")|candidate.equals("")){
+            JOptionPane.showMessageDialog(null,"Please answer all questions");
+        
+    }
+        else if(p4maleBtn.isSelected()|p4femaleBtn.isSelected()){
+            
+        poll.add(q);
+
+        
 
         //move to panel one - new voter or admin
         panelOne.setVisible(true);
@@ -1260,6 +1277,10 @@ public class PollGui extends javax.swing.JFrame {
         p4Answer2TF.setText("");
         ageGroup.clearSelection();
         panel4Group.clearSelection();
+        }
+        else{JOptionPane.showMessageDialog(null,"Please select a gender");
+        
+        }
 
 
     }//GEN-LAST:event_p4SubmitBtnActionPerformed
@@ -1285,7 +1306,7 @@ public class PollGui extends javax.swing.JFrame {
             voterAge = ageGrp4Btn.getText();
         }
 
-        Question q;
+        Question q=null;
 
         String candidate = (String) p5candidateComboBox.getSelectedItem();
 
@@ -1301,9 +1322,14 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p5femaleBtn.getText();
             }
             q = new age40to65(voterAge, candidate, gender, q1, q2);
-            poll.add(q);
-
         }
+            if(q1.equals("")|q2.equals("")|candidate.equals("")){
+            JOptionPane.showMessageDialog(null,"Please answer all questions");
+        
+    }
+        else if(p5maleBtn.isSelected()|p5femaleBtn.isSelected()){
+            
+        poll.add(q);
 
         //move to panel one - new voter or admin
         panelOne.setVisible(true);
@@ -1319,6 +1345,11 @@ public class PollGui extends javax.swing.JFrame {
         p5Answer2TF.setText("");
         ageGroup.clearSelection();
         panel5Group.clearSelection();
+        
+               }
+        else{JOptionPane.showMessageDialog(null,"Please select a gender");
+        
+        }
     }//GEN-LAST:event_p5SubmitBtnActionPerformed
 
     private void p6SubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p6SubmitBtnActionPerformed
@@ -1343,7 +1374,7 @@ public class PollGui extends javax.swing.JFrame {
             voterAge = ageGrp4Btn.getText();
         }
 
-        Question q;
+        Question q=null;
 
         String candidate = (String) p6candidateComboBox.getSelectedItem();
 
@@ -1359,9 +1390,15 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p6femaleBtn.getText();
             }
             q = new ageOver65(voterAge, candidate, gender, q1, q2);
-            poll.add(q);
+ }
+            if(q1.equals("")|q2.equals("")|candidate.equals("")){
+            JOptionPane.showMessageDialog(null,"Please answer all questions");
+        
+    }
+        else if(p6maleBtn.isSelected()|p6femaleBtn.isSelected()){
+            
+        poll.add(q);
 
-        }
 
         //move to panel one - new voter or admin
         panelOne.setVisible(true);
@@ -1377,6 +1414,12 @@ public class PollGui extends javax.swing.JFrame {
         p6Answer2TF.setText("");
         ageGroup.clearSelection();
         panel6Group.clearSelection();
+        
+               
+               }
+        else{JOptionPane.showMessageDialog(null,"Please select a gender");
+        
+        }
     }//GEN-LAST:event_p6SubmitBtnActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
