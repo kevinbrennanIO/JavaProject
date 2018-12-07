@@ -1143,7 +1143,7 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p3maleBtn.getText();
             }
             if (p3femaleBtn.isSelected()) {
-                gender = p3maleBtn.getText();
+                gender = p3femaleBtn.getText();
             }
             q = new age18to25(voterAge, candidate, gender, q1, q2);
             poll.add(q);
@@ -1228,7 +1228,7 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p4maleBtn.getText();
             }
             if (p4femaleBtn.isSelected()) {
-                gender = p4maleBtn.getText();
+                gender = p4femaleBtn.getText();
             }
             q = new age25to40(voterAge, candidate, gender, q1, q2);
             poll.add(q);
@@ -1287,7 +1287,7 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p5maleBtn.getText();
             }
             if (p5femaleBtn.isSelected()) {
-                gender = p5maleBtn.getText();
+                gender = p5femaleBtn.getText();
             }
             q = new age40to65(voterAge, candidate, gender, q1, q2);
             poll.add(q);
@@ -1345,7 +1345,7 @@ public class PollGui extends javax.swing.JFrame {
                 gender = p6maleBtn.getText();
             }
             if (p6femaleBtn.isSelected()) {
-                gender = p6maleBtn.getText();
+                gender = p6femaleBtn.getText();
             }
             q = new ageOver65(voterAge, candidate, gender, q1, q2);
             poll.add(q);
