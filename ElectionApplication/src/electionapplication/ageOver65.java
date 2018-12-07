@@ -6,8 +6,9 @@
 package electionapplication;
 
 /**
- *
- * @author markk
+ *  Date from 13/11/18 to 07/12/18
+ * @author mark kelly, Lorcan Murray & Kevin Brennan
+ * students numbers 17138311, 16105834 & 16149823
  */
 public class ageOver65 extends Question {
     private String q1;

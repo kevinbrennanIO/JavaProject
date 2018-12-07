@@ -18,8 +18,9 @@ import javax.swing.JOptionPane;
 
 
 /**
- *
- * @author markk
+ *  Date from 13/11/18 to 07/12/18
+ * @author mark kelly, Lorcan Murray & Kevin Brennan
+ * students numbers 17138311, 16105834 & 16149823
  */
 public class PollGui extends javax.swing.JFrame {
 
@@ -996,13 +997,20 @@ public class PollGui extends javax.swing.JFrame {
 
     private void adminUserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminUserBtnActionPerformed
         // TODO add your handling code here:
-        panelOne.setVisible(false);
-        panelTwo.setVisible(true);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        int pin = Integer.parseInt(JOptionPane.showInputDialog("Please enter your pin","Staff Pin Number"));
+        
+        if(pin==311| pin==823 | pin==834 ){
+            panelOne.setVisible(false);
+            panelTwo.setVisible(true);
+            panelThree.setVisible(false);
+            panelFour.setVisible(false);
+            panelFive.setVisible(false);
+            panelSix.setVisible(false);
+            panelSeven.setVisible(false);
+        }
+        else{
+        JOptionPane.showMessageDialog(null,"Sorry, Pin is invalid");
+    }
     }//GEN-LAST:event_adminUserBtnActionPerformed
 
     private void voterUserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voterUserBtnActionPerformed
@@ -1018,6 +1026,7 @@ public class PollGui extends javax.swing.JFrame {
 
     private void loadBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadBTNActionPerformed
         // TODO add your handling code here:
+        //@reference VehicleApp OOP class sample
         File inFile;
         FileInputStream fStream;
         ObjectInputStream oStream;
@@ -1115,6 +1124,7 @@ public class PollGui extends javax.swing.JFrame {
         String q2 = "";
         String voterAge = null;
         String gender = null;
+        String p3Q1 = "";
 
         //convert age group btn to String
         if (ageGrp1Btn.isSelected()) {
@@ -1137,6 +1147,7 @@ public class PollGui extends javax.swing.JFrame {
         if (voterAge.equals("18 - 25")) {
             q1 = p3Answer1TF.getText();
             q2 = p3Answer2TF.getText();
+          
 
             //convert gender group btn to String
             if (p3maleBtn.isSelected()) {
@@ -1386,18 +1397,17 @@ public class PollGui extends javax.swing.JFrame {
 
     private void saveBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBTNActionPerformed
         // TODO add your handling code here:
+        //@reference VehicleApp OOP class sample
         File outFile;
         FileOutputStream fStream;
         ObjectOutputStream oStream;
-        //FileWriter fw;
-        //BufferedWriter bw;
+
         
         try {
             outFile = new File("votes.dat");
             fStream = new FileOutputStream(outFile);
             oStream = new ObjectOutputStream(fStream);
-            //fw = new FileWriter(outFile, true);
-            //bw = new BufferedWriter(fw);
+
             
             oStream.writeObject(poll);
             
