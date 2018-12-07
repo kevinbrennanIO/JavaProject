@@ -19,7 +19,6 @@ public class ElectionApplication {
         PollGui myGUI = new PollGui();
         myGUI.setVisible(true);
         
-        // TODO code application logic here
-    }
+    } 
     
 }

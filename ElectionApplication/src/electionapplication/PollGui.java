@@ -43,13 +43,13 @@ public class PollGui extends javax.swing.JFrame {
         poll = new ArrayList<>();
         
 
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
 
     }
 
@@ -68,16 +68,17 @@ public class PollGui extends javax.swing.JFrame {
         panel5Group = new javax.swing.ButtonGroup();
         panel4Group = new javax.swing.ButtonGroup();
         mainPanel = new javax.swing.JPanel();
-        panelTwo = new javax.swing.JPanel();
+        panelTwoAdmin = new javax.swing.JPanel();
         mainHeadingLbl1 = new javax.swing.JLabel();
         loadBTN = new javax.swing.JButton();
         saveBTN = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        viewBTN = new javax.swing.JButton();
+        adminBackBTN = new javax.swing.JButton();
+        adminLbl = new javax.swing.JLabel();
         ageStatBtn = new javax.swing.JButton();
         genderStatBtn = new javax.swing.JButton();
-        panelThree = new javax.swing.JPanel();
+        statLbl = new javax.swing.JLabel();
+        panelThreeAgeGr1 = new javax.swing.JPanel();
         p3mainHeadingLbl = new javax.swing.JLabel();
         p3candidateComboBox = new javax.swing.JComboBox<>();
         p3maleBtn = new javax.swing.JRadioButton();
@@ -87,10 +88,10 @@ public class PollGui extends javax.swing.JFrame {
         p3Answer1TF = new javax.swing.JTextField();
         p3Answer2TF = new javax.swing.JTextField();
         p3SubmitBtn = new javax.swing.JButton();
-        candidateSelect = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        Back18Btn = new javax.swing.JButton();
-        panelFour = new javax.swing.JPanel();
+        p3CandidateLbl = new javax.swing.JLabel();
+        p3GenderLbl = new javax.swing.JLabel();
+        p3BackBtn = new javax.swing.JButton();
+        panelFourAgeGr2 = new javax.swing.JPanel();
         p4mainHeadingLbl = new javax.swing.JLabel();
         p4candidateComboBox = new javax.swing.JComboBox<>();
         p4maleBtn = new javax.swing.JRadioButton();
@@ -100,10 +101,10 @@ public class PollGui extends javax.swing.JFrame {
         p4Answer1TF = new javax.swing.JTextField();
         p4Answer2TF = new javax.swing.JTextField();
         p4SubmitBtn = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        back26Btn = new javax.swing.JButton();
-        panelFive = new javax.swing.JPanel();
+        p4CandidateLbl = new javax.swing.JLabel();
+        p4GenderLbl = new javax.swing.JLabel();
+        p4BackBtn = new javax.swing.JButton();
+        panelFiveAgeGr3 = new javax.swing.JPanel();
         p5mainHeadingLbl = new javax.swing.JLabel();
         p5candidateComboBox = new javax.swing.JComboBox<>();
         p5maleBtn = new javax.swing.JRadioButton();
@@ -113,10 +114,10 @@ public class PollGui extends javax.swing.JFrame {
         p5Answer1TF = new javax.swing.JTextField();
         p5Answer2TF = new javax.swing.JTextField();
         p5SubmitBtn = new javax.swing.JButton();
-        Back41Btn = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        panelSix = new javax.swing.JPanel();
+        p5BackBtn = new javax.swing.JButton();
+        p5GenderLbl = new javax.swing.JLabel();
+        p5CandidateLbl = new javax.swing.JLabel();
+        panelSixAgeGr4 = new javax.swing.JPanel();
         p6mainHeadingLbl = new javax.swing.JLabel();
         p6candidateComboBox = new javax.swing.JComboBox<>();
         p6maleBtn = new javax.swing.JRadioButton();
@@ -126,10 +127,10 @@ public class PollGui extends javax.swing.JFrame {
         p6Answer1TF = new javax.swing.JTextField();
         p6Answer2TF = new javax.swing.JTextField();
         p6SubmitBtn = new javax.swing.JButton();
-        back65Btn = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        panelSeven = new javax.swing.JPanel();
+        p6BackBtn = new javax.swing.JButton();
+        p6CandidateLbl = new javax.swing.JLabel();
+        p6GenderLbl = new javax.swing.JLabel();
+        panelSevenAgeSelection = new javax.swing.JPanel();
         p7mainHeadingLbl = new javax.swing.JLabel();
         ageGrp1Btn = new javax.swing.JRadioButton();
         ageGrp2Btn = new javax.swing.JRadioButton();
@@ -137,7 +138,7 @@ public class PollGui extends javax.swing.JFrame {
         ageGrp4Btn = new javax.swing.JRadioButton();
         ageGroupLbl = new javax.swing.JLabel();
         ageBackBtn = new javax.swing.JButton();
-        panelOne = new javax.swing.JPanel();
+        panelOneUserType = new javax.swing.JPanel();
         mainHeadingLbl = new javax.swing.JLabel();
         userTypeLbl = new javax.swing.JLabel();
         adminUserBtn = new javax.swing.JButton();
@@ -154,7 +155,7 @@ public class PollGui extends javax.swing.JFrame {
 
         loadBTN.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         loadBTN.setText("Load");
-        loadBTN.setBorder(Back18Btn.getBorder());
+        loadBTN.setBorder(p3BackBtn.getBorder());
         loadBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         loadBTN.setPreferredSize(new java.awt.Dimension(150, 50));
         loadBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +166,7 @@ public class PollGui extends javax.swing.JFrame {
 
         saveBTN.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         saveBTN.setText("Save");
-        saveBTN.setBorder(Back18Btn.getBorder());
+        saveBTN.setBorder(p3BackBtn.getBorder());
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         saveBTN.setPreferredSize(new java.awt.Dimension(150, 50));
         saveBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -174,30 +175,30 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton3.setText("View");
-        jButton3.setBorder(Back18Btn.getBorder());
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setPreferredSize(new java.awt.Dimension(150, 50));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        viewBTN.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        viewBTN.setText("View");
+        viewBTN.setBorder(p3BackBtn.getBorder());
+        viewBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        viewBTN.setPreferredSize(new java.awt.Dimension(150, 50));
+        viewBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                viewBTNActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton4.setText("Back");
-        jButton4.setBorder(Back18Btn.getBorder());
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setPreferredSize(new java.awt.Dimension(150, 50));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        adminBackBTN.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        adminBackBTN.setText("Back");
+        adminBackBTN.setBorder(p3BackBtn.getBorder());
+        adminBackBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        adminBackBTN.setPreferredSize(new java.awt.Dimension(150, 50));
+        adminBackBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                adminBackBTNActionPerformed(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel2.setText("Administration Panel");
+        adminLbl.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        adminLbl.setText("Administration Panel");
 
         ageStatBtn.setText("Age");
         ageStatBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -219,58 +220,68 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout panelTwoLayout = new javax.swing.GroupLayout(panelTwo);
-        panelTwo.setLayout(panelTwoLayout);
-        panelTwoLayout.setHorizontalGroup(
-            panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(ageStatBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(genderStatBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(252, 252, 252))
-            .addGroup(panelTwoLayout.createSequentialGroup()
-                .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelTwoLayout.createSequentialGroup()
+        statLbl.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        statLbl.setText("View statistics for this session:");
+
+        javax.swing.GroupLayout panelTwoAdminLayout = new javax.swing.GroupLayout(panelTwoAdmin);
+        panelTwoAdmin.setLayout(panelTwoAdminLayout);
+        panelTwoAdminLayout.setHorizontalGroup(
+            panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTwoAdminLayout.createSequentialGroup()
+                .addGroup(panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelTwoAdminLayout.createSequentialGroup()
                         .addGap(140, 140, 140)
                         .addComponent(mainHeadingLbl1))
-                    .addGroup(panelTwoLayout.createSequentialGroup()
-                        .addGap(361, 361, 361)
-                        .addComponent(jLabel2))
-                    .addGroup(panelTwoLayout.createSequentialGroup()
+                    .addGroup(panelTwoAdminLayout.createSequentialGroup()
                         .addGap(223, 223, 223)
                         .addComponent(loadBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(viewBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(saveBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(adminBackBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(88, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoAdminLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoAdminLayout.createSequentialGroup()
+                        .addGroup(panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(panelTwoAdminLayout.createSequentialGroup()
+                                .addComponent(ageStatBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(80, 80, 80)
+                                .addComponent(genderStatBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(statLbl))
+                        .addGap(259, 259, 259))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTwoAdminLayout.createSequentialGroup()
+                        .addComponent(adminLbl)
+                        .addGap(306, 306, 306))))
         );
-        panelTwoLayout.setVerticalGroup(
-            panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelTwoLayout.createSequentialGroup()
+        panelTwoAdminLayout.setVerticalGroup(
+            panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTwoAdminLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(mainHeadingLbl1)
-                .addGap(85, 85, 85)
-                .addComponent(jLabel2)
-                .addGap(66, 66, 66)
-                .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(81, 81, 81)
+                .addComponent(adminLbl)
+                .addGap(70, 70, 70)
+                .addGroup(panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(loadBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(viewBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(saveBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(63, 63, 63)
-                .addGroup(panelTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(adminBackBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addComponent(statLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelTwoAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ageStatBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(genderStatBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76))
+                .addContainerGap())
         );
 
-        mainPanel.add(panelTwo, "card3");
+        mainPanel.add(panelTwoAdmin, "card3");
 
-        panelThree.setPreferredSize(new java.awt.Dimension(1006, 579));
+        panelThreeAgeGr1.setPreferredSize(new java.awt.Dimension(1006, 579));
 
         p3mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         p3mainHeadingLbl.setText("Election Application 2018");
@@ -335,62 +346,62 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        candidateSelect.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        candidateSelect.setText("Select a candidate:");
+        p3CandidateLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p3CandidateLbl.setText("Select a candidate:");
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel1.setText("Gender?");
+        p3GenderLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p3GenderLbl.setText("Gender?");
 
-        Back18Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        Back18Btn.setText("Back");
-        Back18Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Back18Btn.addActionListener(new java.awt.event.ActionListener() {
+        p3BackBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        p3BackBtn.setText("Back");
+        p3BackBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        p3BackBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Back18BtnActionPerformed(evt);
+                p3BackBtnActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout panelThreeLayout = new javax.swing.GroupLayout(panelThree);
-        panelThree.setLayout(panelThreeLayout);
-        panelThreeLayout.setHorizontalGroup(
-            panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelThreeLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelThreeAgeGr1Layout = new javax.swing.GroupLayout(panelThreeAgeGr1);
+        panelThreeAgeGr1.setLayout(panelThreeAgeGr1Layout);
+        panelThreeAgeGr1Layout.setHorizontalGroup(
+            panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelThreeAgeGr1Layout.createSequentialGroup()
                 .addGap(140, 140, 140)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelThreeLayout.createSequentialGroup()
+                .addGroup(panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelThreeAgeGr1Layout.createSequentialGroup()
                         .addComponent(p3SubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(Back18Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(p3BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(p3Q1Lbl)
                     .addComponent(p3mainHeadingLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(panelThreeLayout.createSequentialGroup()
-                        .addComponent(candidateSelect)
+                    .addGroup(panelThreeAgeGr1Layout.createSequentialGroup()
+                        .addComponent(p3CandidateLbl)
                         .addGap(18, 18, 18)
                         .addComponent(p3candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelThreeLayout.createSequentialGroup()
+                    .addGroup(panelThreeAgeGr1Layout.createSequentialGroup()
                         .addComponent(p3maleBtn)
                         .addGap(32, 32, 32)
                         .addComponent(p3femaleBtn))
-                    .addComponent(jLabel1)
-                    .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(p3GenderLbl)
+                    .addGroup(panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(p3Answer2TF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addComponent(p3Answer1TF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addComponent(p3Q2Lbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        panelThreeLayout.setVerticalGroup(
-            panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelThreeLayout.createSequentialGroup()
+        panelThreeAgeGr1Layout.setVerticalGroup(
+            panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelThreeAgeGr1Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(p3mainHeadingLbl)
                 .addGap(25, 25, 25)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(candidateSelect)
+                .addGroup(panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p3CandidateLbl)
                     .addComponent(p3candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
-                .addComponent(jLabel1)
+                .addComponent(p3GenderLbl)
                 .addGap(18, 18, 18)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p3maleBtn)
                     .addComponent(p3femaleBtn))
                 .addGap(28, 28, 28)
@@ -402,13 +413,13 @@ public class PollGui extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(p3Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addGroup(panelThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Back18Btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelThreeAgeGr1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(p3BackBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(p3SubmitBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
-        mainPanel.add(panelThree, "card4");
+        mainPanel.add(panelThreeAgeGr1, "card4");
 
         p4mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         p4mainHeadingLbl.setText("Election Application 2018");
@@ -442,7 +453,7 @@ public class PollGui extends javax.swing.JFrame {
         p4Q1Lbl.setText("Q1: Have you voted in previous presidential elections?");
 
         p4Q2Lbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        p4Q2Lbl.setText("Q2: What is your marrage status?");
+        p4Q2Lbl.setText("Q2: What is your marital status?");
 
         p4Answer1TF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         p4Answer1TF.setForeground(new java.awt.Color(255, 0, 0));
@@ -457,7 +468,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p4SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p4SubmitBtn.setText("Submit");
-        p4SubmitBtn.setBorder(Back18Btn.getBorder());
+        p4SubmitBtn.setBorder(p3BackBtn.getBorder());
         p4SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p4SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p4SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -466,62 +477,62 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel3.setText("Select a Candidate: ");
+        p4CandidateLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p4CandidateLbl.setText("Select a Candidate: ");
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel4.setText("Gender?");
+        p4GenderLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p4GenderLbl.setText("Gender?");
 
-        back26Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        back26Btn.setText("Back");
-        back26Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        back26Btn.addActionListener(new java.awt.event.ActionListener() {
+        p4BackBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        p4BackBtn.setText("Back");
+        p4BackBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        p4BackBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                back26BtnActionPerformed(evt);
+                p4BackBtnActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout panelFourLayout = new javax.swing.GroupLayout(panelFour);
-        panelFour.setLayout(panelFourLayout);
-        panelFourLayout.setHorizontalGroup(
-            panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFourLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelFourAgeGr2Layout = new javax.swing.GroupLayout(panelFourAgeGr2);
+        panelFourAgeGr2.setLayout(panelFourAgeGr2Layout);
+        panelFourAgeGr2Layout.setHorizontalGroup(
+            panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFourAgeGr2Layout.createSequentialGroup()
                 .addGap(140, 140, 140)
-                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addGroup(panelFourLayout.createSequentialGroup()
+                .addGroup(panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(p4GenderLbl)
+                    .addGroup(panelFourAgeGr2Layout.createSequentialGroup()
                         .addComponent(p4SubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(back26Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(p4BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(p4Q2Lbl)
                     .addComponent(p4Q1Lbl)
                     .addComponent(p4mainHeadingLbl)
-                    .addGroup(panelFourLayout.createSequentialGroup()
+                    .addGroup(panelFourAgeGr2Layout.createSequentialGroup()
                         .addComponent(p4maleBtn)
                         .addGap(32, 32, 32)
                         .addComponent(p4femaleBtn))
-                    .addGroup(panelFourLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                    .addGroup(panelFourAgeGr2Layout.createSequentialGroup()
+                        .addComponent(p4CandidateLbl)
                         .addGap(24, 24, 24)
                         .addComponent(p4candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(p4Answer2TF, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(p4Answer1TF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE)))
                 .addContainerGap(88, Short.MAX_VALUE))
         );
-        panelFourLayout.setVerticalGroup(
-            panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFourLayout.createSequentialGroup()
+        panelFourAgeGr2Layout.setVerticalGroup(
+            panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFourAgeGr2Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(p4mainHeadingLbl)
                 .addGap(27, 27, 27)
-                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p4candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(p4CandidateLbl))
                 .addGap(28, 28, 28)
-                .addComponent(jLabel4)
+                .addComponent(p4GenderLbl)
                 .addGap(18, 18, 18)
-                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p4maleBtn)
                     .addComponent(p4femaleBtn))
                 .addGap(31, 31, 31)
@@ -533,13 +544,13 @@ public class PollGui extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(p4Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
-                .addGroup(panelFourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelFourAgeGr2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p4SubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(back26Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(43, Short.MAX_VALUE))
+                    .addComponent(p4BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
-        mainPanel.add(panelFour, "card5");
+        mainPanel.add(panelFourAgeGr2, "card5");
 
         p5mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         p5mainHeadingLbl.setText("Election Application 2018");
@@ -588,7 +599,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p5SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p5SubmitBtn.setText("Submit");
-        p5SubmitBtn.setBorder(Back18Btn.getBorder());
+        p5SubmitBtn.setBorder(p3BackBtn.getBorder());
         p5SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p5SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p5SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -597,62 +608,62 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        Back41Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        Back41Btn.setText("Back");
-        Back41Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Back41Btn.addActionListener(new java.awt.event.ActionListener() {
+        p5BackBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        p5BackBtn.setText("Back");
+        p5BackBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        p5BackBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Back41BtnActionPerformed(evt);
+                p5BackBtnActionPerformed(evt);
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel7.setText("Gender");
+        p5GenderLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p5GenderLbl.setText("Gender");
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel8.setText("Select a Candidate");
+        p5CandidateLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p5CandidateLbl.setText("Select a Candidate");
 
-        javax.swing.GroupLayout panelFiveLayout = new javax.swing.GroupLayout(panelFive);
-        panelFive.setLayout(panelFiveLayout);
-        panelFiveLayout.setHorizontalGroup(
-            panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFiveLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelFiveAgeGr3Layout = new javax.swing.GroupLayout(panelFiveAgeGr3);
+        panelFiveAgeGr3.setLayout(panelFiveAgeGr3Layout);
+        panelFiveAgeGr3Layout.setHorizontalGroup(
+            panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFiveAgeGr3Layout.createSequentialGroup()
                 .addGap(140, 140, 140)
-                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelFiveLayout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                .addGroup(panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelFiveAgeGr3Layout.createSequentialGroup()
+                        .addComponent(p5CandidateLbl)
                         .addGap(18, 18, 18)
                         .addComponent(p5candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelFiveLayout.createSequentialGroup()
+                    .addGroup(panelFiveAgeGr3Layout.createSequentialGroup()
                         .addComponent(p5SubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(Back41Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(p5BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(p5Q1Lbl)
                     .addComponent(p5mainHeadingLbl)
-                    .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(p5Answer1TF, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(p5Answer2TF, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(p5Q2Lbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(panelFiveLayout.createSequentialGroup()
+                    .addGroup(panelFiveAgeGr3Layout.createSequentialGroup()
                         .addComponent(p5maleBtn)
                         .addGap(48, 48, 48)
                         .addComponent(p5femaleBtn))
-                    .addComponent(jLabel7))
+                    .addComponent(p5GenderLbl))
                 .addContainerGap(88, Short.MAX_VALUE))
         );
-        panelFiveLayout.setVerticalGroup(
-            panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFiveLayout.createSequentialGroup()
+        panelFiveAgeGr3Layout.setVerticalGroup(
+            panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFiveAgeGr3Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(p5mainHeadingLbl)
                 .addGap(41, 41, 41)
-                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p5candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
+                    .addComponent(p5CandidateLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
+                .addComponent(p5GenderLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p5maleBtn)
                     .addComponent(p5femaleBtn))
                 .addGap(43, 43, 43)
@@ -664,13 +675,13 @@ public class PollGui extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(p5Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
-                .addGroup(panelFiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Back41Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelFiveAgeGr3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p5BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(p5SubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41))
         );
 
-        mainPanel.add(panelFive, "card6");
+        mainPanel.add(panelFiveAgeGr3, "card6");
 
         p6mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         p6mainHeadingLbl.setText("Election Application 2018");
@@ -720,7 +731,7 @@ public class PollGui extends javax.swing.JFrame {
 
         p6SubmitBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         p6SubmitBtn.setText("Submit");
-        p6SubmitBtn.setBorder(Back18Btn.getBorder());
+        p6SubmitBtn.setBorder(p3BackBtn.getBorder());
         p6SubmitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         p6SubmitBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         p6SubmitBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -729,62 +740,62 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        back65Btn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        back65Btn.setText("Back");
-        back65Btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        back65Btn.addActionListener(new java.awt.event.ActionListener() {
+        p6BackBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        p6BackBtn.setText("Back");
+        p6BackBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        p6BackBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                back65BtnActionPerformed(evt);
+                p6BackBtnActionPerformed(evt);
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel5.setText("Select a Candidate");
+        p6CandidateLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p6CandidateLbl.setText("Select a Candidate");
 
-        jLabel6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel6.setText("Gender");
+        p6GenderLbl.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        p6GenderLbl.setText("Gender");
 
-        javax.swing.GroupLayout panelSixLayout = new javax.swing.GroupLayout(panelSix);
-        panelSix.setLayout(panelSixLayout);
-        panelSixLayout.setHorizontalGroup(
-            panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSixLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelSixAgeGr4Layout = new javax.swing.GroupLayout(panelSixAgeGr4);
+        panelSixAgeGr4.setLayout(panelSixAgeGr4Layout);
+        panelSixAgeGr4Layout.setHorizontalGroup(
+            panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSixAgeGr4Layout.createSequentialGroup()
                 .addGap(140, 140, 140)
-                .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
+                .addGroup(panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(p6GenderLbl)
                     .addComponent(p6Q2Lbl)
                     .addComponent(p6mainHeadingLbl)
-                    .addGroup(panelSixLayout.createSequentialGroup()
+                    .addGroup(panelSixAgeGr4Layout.createSequentialGroup()
                         .addComponent(p6maleBtn)
                         .addGap(33, 33, 33)
                         .addComponent(p6femaleBtn))
-                    .addGroup(panelSixLayout.createSequentialGroup()
-                        .addComponent(jLabel5)
+                    .addGroup(panelSixAgeGr4Layout.createSequentialGroup()
+                        .addComponent(p6CandidateLbl)
                         .addGap(18, 18, 18)
                         .addComponent(p6candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelSixLayout.createSequentialGroup()
+                    .addGroup(panelSixAgeGr4Layout.createSequentialGroup()
                         .addComponent(p6SubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(back65Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(p6BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(p6Answer2TF, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(p6Answer1TF, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(p6Q1Lbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(88, Short.MAX_VALUE))
         );
-        panelSixLayout.setVerticalGroup(
-            panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSixLayout.createSequentialGroup()
+        panelSixAgeGr4Layout.setVerticalGroup(
+            panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSixAgeGr4Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(p6mainHeadingLbl)
                 .addGap(41, 41, 41)
-                .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                .addGroup(panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p6CandidateLbl)
                     .addComponent(p6candidateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(p6GenderLbl)
                 .addGap(18, 18, 18)
-                .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p6maleBtn)
                     .addComponent(p6femaleBtn))
                 .addGap(34, 34, 34)
@@ -796,13 +807,13 @@ public class PollGui extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(p6Answer2TF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addGroup(panelSixLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(back65Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelSixAgeGr4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(p6BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(p6SubmitBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
                 .addGap(46, 46, 46))
         );
 
-        mainPanel.add(panelSix, "card7");
+        mainPanel.add(panelSixAgeGr4, "card7");
 
         p7mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         p7mainHeadingLbl.setText("Election Application 2018");
@@ -863,54 +874,56 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout panelSevenLayout = new javax.swing.GroupLayout(panelSeven);
-        panelSeven.setLayout(panelSevenLayout);
-        panelSevenLayout.setHorizontalGroup(
-            panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSevenLayout.createSequentialGroup()
-                .addGroup(panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelSevenLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelSevenAgeSelectionLayout = new javax.swing.GroupLayout(panelSevenAgeSelection);
+        panelSevenAgeSelection.setLayout(panelSevenAgeSelectionLayout);
+        panelSevenAgeSelectionLayout.setHorizontalGroup(
+            panelSevenAgeSelectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSevenAgeSelectionLayout.createSequentialGroup()
+                .addGroup(panelSevenAgeSelectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelSevenAgeSelectionLayout.createSequentialGroup()
                         .addGap(140, 140, 140)
-                        .addGroup(panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(p7mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(panelSevenLayout.createSequentialGroup()
+                        .addComponent(p7mainHeadingLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panelSevenAgeSelectionLayout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addGroup(panelSevenAgeSelectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelSevenAgeSelectionLayout.createSequentialGroup()
                                 .addComponent(ageGrp1Btn)
-                                .addGap(96, 96, 96)
+                                .addGap(112, 112, 112)
                                 .addComponent(ageGrp2Btn)
-                                .addGap(115, 115, 115)
-                                .addComponent(ageGrp3Btn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(ageGrp4Btn))))
-                    .addGroup(panelSevenLayout.createSequentialGroup()
-                        .addGap(354, 354, 354)
-                        .addComponent(ageGroupLbl)))
+                                .addGap(108, 108, 108)
+                                .addComponent(ageGrp3Btn))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSevenAgeSelectionLayout.createSequentialGroup()
+                                .addComponent(ageGroupLbl)
+                                .addGap(38, 38, 38)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ageGrp4Btn)))
                 .addContainerGap(88, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSevenLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSevenAgeSelectionLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(ageBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(415, 415, 415))
+                .addGap(339, 339, 339))
         );
-        panelSevenLayout.setVerticalGroup(
-            panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSevenLayout.createSequentialGroup()
+        panelSevenAgeSelectionLayout.setVerticalGroup(
+            panelSevenAgeSelectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSevenAgeSelectionLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(p7mainHeadingLbl)
-                .addGap(75, 75, 75)
+                .addGap(82, 82, 82)
                 .addComponent(ageGroupLbl)
-                .addGap(81, 81, 81)
-                .addGroup(panelSevenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(74, 74, 74)
+                .addGroup(panelSevenAgeSelectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ageGrp1Btn)
                     .addComponent(ageGrp2Btn)
                     .addComponent(ageGrp3Btn)
                     .addComponent(ageGrp4Btn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
                 .addComponent(ageBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(83, 83, 83))
+                .addContainerGap())
         );
 
-        mainPanel.add(panelSeven, "card8");
+        mainPanel.add(panelSevenAgeSelection, "card8");
 
-        panelOne.setPreferredSize(new java.awt.Dimension(1006, 560));
+        panelOneUserType.setPreferredSize(new java.awt.Dimension(1006, 560));
 
         mainHeadingLbl.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         mainHeadingLbl.setText("Election Application 2018");
@@ -920,7 +933,7 @@ public class PollGui extends javax.swing.JFrame {
 
         adminUserBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         adminUserBtn.setText("Admin");
-        adminUserBtn.setBorder(back65Btn.getBorder());
+        adminUserBtn.setBorder(p6BackBtn.getBorder());
         adminUserBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         adminUserBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         adminUserBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -931,7 +944,7 @@ public class PollGui extends javax.swing.JFrame {
 
         voterUserBtn.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         voterUserBtn.setText("Voter");
-        voterUserBtn.setBorder(Back18Btn.getBorder());
+        voterUserBtn.setBorder(p3BackBtn.getBorder());
         voterUserBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         voterUserBtn.setPreferredSize(new java.awt.Dimension(150, 50));
         voterUserBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -940,40 +953,40 @@ public class PollGui extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout panelOneLayout = new javax.swing.GroupLayout(panelOne);
-        panelOne.setLayout(panelOneLayout);
-        panelOneLayout.setHorizontalGroup(
-            panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOneLayout.createSequentialGroup()
-                .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelOneLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelOneUserTypeLayout = new javax.swing.GroupLayout(panelOneUserType);
+        panelOneUserType.setLayout(panelOneUserTypeLayout);
+        panelOneUserTypeLayout.setHorizontalGroup(
+            panelOneUserTypeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOneUserTypeLayout.createSequentialGroup()
+                .addGroup(panelOneUserTypeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelOneUserTypeLayout.createSequentialGroup()
                         .addGap(140, 140, 140)
                         .addComponent(mainHeadingLbl))
-                    .addGroup(panelOneLayout.createSequentialGroup()
-                        .addGap(341, 341, 341)
+                    .addGroup(panelOneUserTypeLayout.createSequentialGroup()
+                        .addGap(254, 254, 254)
                         .addComponent(adminUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(voterUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelOneLayout.createSequentialGroup()
-                        .addGap(405, 405, 405)
-                        .addComponent(userTypeLbl)))
-                .addContainerGap())
+                        .addGap(105, 105, 105)
+                        .addComponent(voterUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(82, 82, 82))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOneUserTypeLayout.createSequentialGroup()
+                .addComponent(userTypeLbl)
+                .addGap(355, 355, 355))
         );
-        panelOneLayout.setVerticalGroup(
-            panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOneLayout.createSequentialGroup()
+        panelOneUserTypeLayout.setVerticalGroup(
+            panelOneUserTypeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOneUserTypeLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(mainHeadingLbl)
-                .addGap(85, 85, 85)
+                .addGap(87, 87, 87)
                 .addComponent(userTypeLbl)
-                .addGap(60, 60, 60)
-                .addGroup(panelOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(58, 58, 58)
+                .addGroup(panelOneUserTypeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(adminUserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(voterUserBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(194, Short.MAX_VALUE))
         );
 
-        mainPanel.add(panelOne, "card2");
+        mainPanel.add(panelOneUserType, "card2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1000,13 +1013,13 @@ public class PollGui extends javax.swing.JFrame {
         int pin = Integer.parseInt(JOptionPane.showInputDialog("Please enter your pin","Staff Pin Number"));
         
         if(pin==311| pin==823 | pin==834 ){
-            panelOne.setVisible(false);
-            panelTwo.setVisible(true);
-            panelThree.setVisible(false);
-            panelFour.setVisible(false);
-            panelFive.setVisible(false);
-            panelSix.setVisible(false);
-            panelSeven.setVisible(false);
+            panelOneUserType.setVisible(false);
+            panelTwoAdmin.setVisible(true);
+            panelThreeAgeGr1.setVisible(false);
+            panelFourAgeGr2.setVisible(false);
+            panelFiveAgeGr3.setVisible(false);
+            panelSixAgeGr4.setVisible(false);
+            panelSevenAgeSelection.setVisible(false);
         }
         else{
         JOptionPane.showMessageDialog(null,"Sorry, Pin is invalid");
@@ -1015,13 +1028,13 @@ public class PollGui extends javax.swing.JFrame {
 
     private void voterUserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voterUserBtnActionPerformed
         // TODO add your handling code here:
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(true);
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(true);
     }//GEN-LAST:event_voterUserBtnActionPerformed
 
     private void loadBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadBTNActionPerformed
@@ -1067,52 +1080,52 @@ public class PollGui extends javax.swing.JFrame {
 
     private void ageGrp1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp1BtnActionPerformed
         // TODO add your handling code here:
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(true);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(true);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         
         countGroup1 = countGroup1+1;
     }//GEN-LAST:event_ageGrp1BtnActionPerformed
 
     private void ageGrp2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp2BtnActionPerformed
         // TODO add your handling code here:
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(true);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(true);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         
         countGroup2 = countGroup2+1;
     }//GEN-LAST:event_ageGrp2BtnActionPerformed
 
     private void ageGrp3BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp3BtnActionPerformed
         // TODO add your handling code here:
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(true);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(true);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         
         countGroup3 = countGroup3+1;
     }//GEN-LAST:event_ageGrp3BtnActionPerformed
 
     private void ageGrp4BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageGrp4BtnActionPerformed
         // TODO add your handling code here:
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(true);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(true);
+        panelSevenAgeSelection.setVisible(false);
         
         countGroup4 = countGroup4+1;
     }//GEN-LAST:event_ageGrp4BtnActionPerformed
@@ -1168,13 +1181,13 @@ public class PollGui extends javax.swing.JFrame {
         poll.add(q);
 
         //move to panel one - new voter or admin
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         //clear inputs
         p3Answer1TF.setText("");
         p3Answer2TF.setText("");
@@ -1188,7 +1201,7 @@ public class PollGui extends javax.swing.JFrame {
 
     }//GEN-LAST:event_p3SubmitBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void viewBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBTNActionPerformed
         // TODO add your handling code here:
         for (Question x : poll) {
 
@@ -1212,7 +1225,7 @@ public class PollGui extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, x.printDetails());
             }
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_viewBTNActionPerformed
 
     private void p4SubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p4SubmitBtnActionPerformed
         // TODO add your handling code here:
@@ -1264,13 +1277,13 @@ public class PollGui extends javax.swing.JFrame {
         
 
         //move to panel one - new voter or admin
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         //clear inputs
 
         p4Answer1TF.setText("");
@@ -1332,13 +1345,13 @@ public class PollGui extends javax.swing.JFrame {
         poll.add(q);
 
         //move to panel one - new voter or admin
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         //clear inputs
 
         p5Answer1TF.setText("");
@@ -1401,13 +1414,13 @@ public class PollGui extends javax.swing.JFrame {
 
 
         //move to panel one - new voter or admin
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
         //clear inputs
 
         p6Answer1TF.setText("");
@@ -1422,17 +1435,17 @@ public class PollGui extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_p6SubmitBtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void adminBackBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminBackBTNActionPerformed
         // TODO add your handling code here:
         
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
-    }//GEN-LAST:event_jButton4ActionPerformed
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
+    }//GEN-LAST:event_adminBackBTNActionPerformed
 
     private void p3Answer2TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p3Answer2TFActionPerformed
         // TODO add your handling code here:
@@ -1471,58 +1484,58 @@ public class PollGui extends javax.swing.JFrame {
 
     private void ageBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageBackBtnActionPerformed
         // Back button for age group selection   
-        panelOne.setVisible(true);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(false);
+        panelOneUserType.setVisible(true);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(false);
     }//GEN-LAST:event_ageBackBtnActionPerformed
 
-    private void back65BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back65BtnActionPerformed
+    private void p6BackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p6BackBtnActionPerformed
         // Back button for age 65+
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(true);
-    }//GEN-LAST:event_back65BtnActionPerformed
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(true);
+    }//GEN-LAST:event_p6BackBtnActionPerformed
 
-    private void back26BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back26BtnActionPerformed
+    private void p4BackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p4BackBtnActionPerformed
         // Back button for age group 25+
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(true);
-    }//GEN-LAST:event_back26BtnActionPerformed
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(true);
+    }//GEN-LAST:event_p4BackBtnActionPerformed
 
-    private void Back18BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back18BtnActionPerformed
+    private void p3BackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p3BackBtnActionPerformed
         // Back button for age group 18+
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(true);
-    }//GEN-LAST:event_Back18BtnActionPerformed
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(true);
+    }//GEN-LAST:event_p3BackBtnActionPerformed
 
-    private void Back41BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back41BtnActionPerformed
+    private void p5BackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p5BackBtnActionPerformed
         // Back button for age group 41+
-        panelOne.setVisible(false);
-        panelTwo.setVisible(false);
-        panelThree.setVisible(false);
-        panelFour.setVisible(false);
-        panelFive.setVisible(false);
-        panelSix.setVisible(false);
-        panelSeven.setVisible(true);
-    }//GEN-LAST:event_Back41BtnActionPerformed
+        panelOneUserType.setVisible(false);
+        panelTwoAdmin.setVisible(false);
+        panelThreeAgeGr1.setVisible(false);
+        panelFourAgeGr2.setVisible(false);
+        panelFiveAgeGr3.setVisible(false);
+        panelSixAgeGr4.setVisible(false);
+        panelSevenAgeSelection.setVisible(true);
+    }//GEN-LAST:event_p5BackBtnActionPerformed
 
     private void ageStatBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageStatBtnActionPerformed
         // Dislays session statistics on number of votes
@@ -1607,8 +1620,8 @@ public class PollGui extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back18Btn;
-    private javax.swing.JButton Back41Btn;
+    private javax.swing.JButton adminBackBTN;
+    private javax.swing.JLabel adminLbl;
     private javax.swing.JButton adminUserBtn;
     private javax.swing.JButton ageBackBtn;
     private javax.swing.ButtonGroup ageGroup;
@@ -1618,26 +1631,16 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton ageGrp3Btn;
     private javax.swing.JRadioButton ageGrp4Btn;
     private javax.swing.JButton ageStatBtn;
-    private javax.swing.JButton back26Btn;
-    private javax.swing.JButton back65Btn;
-    private javax.swing.JLabel candidateSelect;
     private javax.swing.JButton genderStatBtn;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JButton loadBTN;
     private javax.swing.JLabel mainHeadingLbl;
     private javax.swing.JLabel mainHeadingLbl1;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JTextField p3Answer1TF;
     private javax.swing.JTextField p3Answer2TF;
+    private javax.swing.JButton p3BackBtn;
+    private javax.swing.JLabel p3CandidateLbl;
+    private javax.swing.JLabel p3GenderLbl;
     private javax.swing.JLabel p3Q1Lbl;
     private javax.swing.JLabel p3Q2Lbl;
     private javax.swing.JButton p3SubmitBtn;
@@ -1647,6 +1650,9 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton p3maleBtn;
     private javax.swing.JTextField p4Answer1TF;
     private javax.swing.JTextField p4Answer2TF;
+    private javax.swing.JButton p4BackBtn;
+    private javax.swing.JLabel p4CandidateLbl;
+    private javax.swing.JLabel p4GenderLbl;
     private javax.swing.JLabel p4Q1Lbl;
     private javax.swing.JLabel p4Q2Lbl;
     private javax.swing.JButton p4SubmitBtn;
@@ -1656,6 +1662,9 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton p4maleBtn;
     private javax.swing.JTextField p5Answer1TF;
     private javax.swing.JTextField p5Answer2TF;
+    private javax.swing.JButton p5BackBtn;
+    private javax.swing.JLabel p5CandidateLbl;
+    private javax.swing.JLabel p5GenderLbl;
     private javax.swing.JLabel p5Q1Lbl;
     private javax.swing.JLabel p5Q2Lbl;
     private javax.swing.JButton p5SubmitBtn;
@@ -1665,6 +1674,9 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton p5maleBtn;
     private javax.swing.JTextField p6Answer1TF;
     private javax.swing.JTextField p6Answer2TF;
+    private javax.swing.JButton p6BackBtn;
+    private javax.swing.JLabel p6CandidateLbl;
+    private javax.swing.JLabel p6GenderLbl;
     private javax.swing.JLabel p6Q1Lbl;
     private javax.swing.JLabel p6Q2Lbl;
     private javax.swing.JButton p6SubmitBtn;
@@ -1677,15 +1689,17 @@ public class PollGui extends javax.swing.JFrame {
     private javax.swing.ButtonGroup panel4Group;
     private javax.swing.ButtonGroup panel5Group;
     private javax.swing.ButtonGroup panel6Group;
-    private javax.swing.JPanel panelFive;
-    private javax.swing.JPanel panelFour;
-    private javax.swing.JPanel panelOne;
-    private javax.swing.JPanel panelSeven;
-    private javax.swing.JPanel panelSix;
-    private javax.swing.JPanel panelThree;
-    private javax.swing.JPanel panelTwo;
+    private javax.swing.JPanel panelFiveAgeGr3;
+    private javax.swing.JPanel panelFourAgeGr2;
+    private javax.swing.JPanel panelOneUserType;
+    private javax.swing.JPanel panelSevenAgeSelection;
+    private javax.swing.JPanel panelSixAgeGr4;
+    private javax.swing.JPanel panelThreeAgeGr1;
+    private javax.swing.JPanel panelTwoAdmin;
     private javax.swing.JButton saveBTN;
+    private javax.swing.JLabel statLbl;
     private javax.swing.JLabel userTypeLbl;
+    private javax.swing.JButton viewBTN;
     private javax.swing.JButton voterUserBtn;
     // End of variables declaration//GEN-END:variables
 
