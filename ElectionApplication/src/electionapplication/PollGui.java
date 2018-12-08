@@ -1264,6 +1264,7 @@ public class PollGui extends javax.swing.JFrame {
         p3Answer2TF.setText("");
         ageGroup.clearSelection();
         panel3Group.clearSelection();
+        p3candidateComboBox.setSelectedIndex(0);
         }
         else{JOptionPane.showMessageDialog(null,"Please select a gender");
         
@@ -1361,6 +1362,7 @@ public class PollGui extends javax.swing.JFrame {
         p4Answer2TF.setText("");
         ageGroup.clearSelection();
         panel4Group.clearSelection();
+        p4candidateComboBox.setSelectedIndex(0);
         }
         else{JOptionPane.showMessageDialog(null,"Please select a gender");
         
@@ -1429,6 +1431,7 @@ public class PollGui extends javax.swing.JFrame {
         p5Answer2TF.setText("");
         ageGroup.clearSelection();
         panel5Group.clearSelection();
+        p5candidateComboBox.setSelectedIndex(0);
         
                }
         else{JOptionPane.showMessageDialog(null,"Please select a gender");
@@ -1498,6 +1501,8 @@ public class PollGui extends javax.swing.JFrame {
         p6Answer2TF.setText("");
         ageGroup.clearSelection();
         panel6Group.clearSelection();
+        p6candidateComboBox.setSelectedIndex(0);
+        
         
                
                }
